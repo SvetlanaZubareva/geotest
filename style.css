@@ -1,0 +1,309 @@
+/* @font-face {
+    font-family: "Inter"; 
+    src: url("./font/Inter-Black.otf") format("otf"); 
+    font-style: normal; 
+    font-weight: 600; 
+  } 
+  @font-face {
+    font-family: "Inter"; 
+    src: url("./font/Inter-Black.otf") format("otf"); 
+    font-style: normal; 
+    font-weight: 400; 
+  }  */
+  /* @font-face {
+    font-family: "Nebulosa Black"; 
+    src: url("./font/Fonts/nebulosa_display_stencil.otf") format("otf"); 
+    font-style: normal; 
+    font-weight: 400; 
+  }  */
+  /* @font-face {
+    font-family: "Nebulosa Black";
+    src: url("./font/Fonts/nebulosa_display_stencil.otf");
+    src: url("./font/Fonts/nebulosa_display_stencil.otf") format('embedded-opentype'),
+    url("./font/Fonts/nebulosa_display_stencil.woff") format('woff'),
+    url("./font/Fonts/nebulosa_display_stencil.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Inter"; 
+    src: url("./font/Inter-Black.otf") format("otf"); 
+    font-style: normal; 
+    font-weight: 500; 
+  }  */
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  html {
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    min-width: 320px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    font-family: "Inter", "Nebulosa Black", sans-serif;
+    color:#151515;
+  }
+  button,
+  a{
+   cursor: pointer;
+   text-decoration: none;
+  }
+  p,
+  h2,
+  h1,
+  h3{
+    margin: 0;
+  }
+  li{
+    list-style: none;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  .list-item_link{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #151515;
+  }
+  .list-item:nth-child(8){
+    font-weight: 500;
+    color: #fff;
+    background-color: #03233A;
+    width: 240px;
+    height: 44px;
+    border-radius: 20px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border: none;
+  }
+  .list-item_link--color{
+    color: #fff;
+  }
+  h1,
+  h2{
+    font-family: "Nebulosa Black", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 60px;
+  }
+  .main-section_p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .main-section_button{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    background-color: #338DCE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 341px;
+    height: 59px;
+    border-radius: 15px;
+    border: none;
+  }
+  .main-section_span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    padding-bottom: 13px;
+    border-bottom: 1px #fff solid;
+  }
+  .main-section_h2{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    padding: 19px 0 19px;
+    border: 1px 0 1px #fff solid;
+  }
+  .main-section_p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffff;
+  }
+  .section-company_p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #03233A;
+  }
+  .section-company_link{
+    background-color: #338DCE;
+    width: 333px;
+    height: 60px;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-services_link-option{
+    background-color: inherit;
+    border: 2px #151515 solid;
+    width: 146px;
+    height: 39px;
+    color: #151515;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .h3-services{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    color: #03233A;
+  }
+  .link-services_button{
+    width: 147px;
+    height: 39px;
+    border-radius: 20px;
+    color: #03233A;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .advantages-list-item_span{
+    font-family: "Nebulosa Black", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 67px;
+    color: #03233A;
+  }
+  .advantages-list-item_p{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #03233A;
+  }
+  .section-offer_p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #404040;
+  }
+  .section-offer_button{
+    width: 332px;
+    height: 54px;
+    border-radius: 15px;
+    border: 2px solid;
+    background-color: #0000;
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #151515;
+  }
+  .section-footer_h2{
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 60px;
+    color: #fff;
+  }
+  .section-footer_link{
+    color: #F0F5FF;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .contact-list-item_a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+  }
+  .header{
+    padding: 30px 0 30px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+  }
+  .nav_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav{
+    width: 100%;
+  }
+  .link-logo{
+    margin-right: 55px;
+  }
+  .list-item{
+    margin-right: 55px;
+  }
+  .list-item:nth-child(8){
+    margin-right: 0;
+  }
+  .main{
+    margin: 135px 0 0;
+  }
+  .main-section_h1{
+    width: 627px;
+    text-transform: uppercase;
+  }
+  .section--margin{
+    margin: 0 auto;
+    display: flex;
+  }
+  .main--swiper{
+    display: grid;
+    grid-template-columns: 43% 53%;
+    gap: 2%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 31px;
+  }
+  .main-section--margin{
+    height: 608px;
+    background-color: #F0F5FF;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 105px 0 155px;
+    padding-left: 21%;
+  }
+  .main-section_p--color{
+    color: #151515;
+    margin: 20px 0 20px;
+    width: 380px;
+  }
+  .main-section_img--swiper{
+    border-radius: 15px;
+  }

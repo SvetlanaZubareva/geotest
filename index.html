@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Геотест</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/font.css">
+</head>
+<body>
+    <header class="header">
+        <section class="section--margin">
+            <a class="logo link-logo" href="#">
+                <svg width="262" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M233.998.27H262v1.806c0 1.204-.602 1.806-1.807 1.806h-9.936v23.486h-4.516V3.882h-9.936c-1.205 0-1.807-.602-1.807-1.806V.269ZM230.11 23.755c1.205 0 1.807.602 1.807 1.806v1.807h-16.259c-6.323 0-9.485-3.161-9.485-9.484v-8.13c0-6.323 3.162-9.485 9.485-9.485h15.807v1.807c0 1.204-.602 1.806-1.806 1.806h-13.098c-3.914 0-5.872 1.958-5.872 5.872v8.13c0 3.914 1.958 5.87 5.872 5.87h13.549ZM200.237 23.755c1.204 0 1.806.602 1.806 1.806v1.807H176.3V.27h25.292v1.807c0 1.204-.602 1.806-1.807 1.806h-18.969v8.13h19.421v3.613h-19.421v8.13h19.421ZM144.904.27h28.002v1.806c0 1.204-.603 1.806-1.807 1.806h-9.936v23.486h-4.517V3.882h-9.936c-1.204 0-1.806-.602-1.806-1.806V.269ZM132.399.27c6.323 0 9.484 3.16 9.484 9.484v8.13c0 6.323-3.161 9.484-9.484 9.484h-9.033c-6.323 0-9.485-3.161-9.485-9.484v-8.13c0-6.323 3.162-9.485 9.485-9.485h9.033Zm4.968 17.614v-8.13c0-3.914-1.958-5.872-5.872-5.872h-7.226c-3.914 0-5.872 1.958-5.872 5.872v8.13c0 3.914 1.958 5.87 5.872 5.87h7.226c3.914 0 5.872-1.956 5.872-5.87ZM107.945 23.755c1.205 0 1.807.602 1.807 1.806v1.807H84.008V.27H109.3v1.807c0 1.204-.602 1.806-1.807 1.806H88.524v8.13h19.421v3.613h-19.42v8.13h19.42ZM56.221.27h24.39v1.806c0 1.204-.603 1.806-1.808 1.806H60.739v21.68c0 1.204-.602 1.806-1.807 1.806h-2.71V.27ZM177.273 36.759h9.751v.722c0 .482-.241.723-.722.723h-7.223v8.667c0 .481-.241.722-.722.722h-1.084V36.76ZM174.077 36.759h1.084v10.834h-1.084c-.481 0-.722-.24-.722-.722v-3.973h-7.223v3.973c0 .481-.241.722-.722.722h-1.083V36.76h1.083c.481 0 .722.24.722.722v3.973h7.223V37.48c0-.481.241-.722.722-.722ZM160.409 36.759h1.806v10.834h-1.083c-.482 0-.723-.24-.723-.722v-7.87l-7.223 8.592h-1.805V36.76h1.083c.482 0 .722.24.722.722v7.87l7.223-8.592ZM146.734 36.759c2.047 0 3.07 1.023 3.07 3.07 0 2.046-1.023 3.07-3.07 3.07h-5.598v3.972c0 .481-.24.722-.722.722h-1.083V36.76h7.403Zm-.361 4.695c1.083 0 1.625-.542 1.625-1.625 0-1.084-.542-1.625-1.625-1.625h-5.237v3.25h5.237ZM135.413 36.759h1.806v10.834h-1.084c-.481 0-.722-.24-.722-.722v-7.87l-7.223 8.592h-1.805V36.76h1.083c.482 0 .722.24.722.722v7.87l7.223-8.592ZM123.189 36.759h1.083v10.834h-1.083c-.481 0-.722-.24-.722-.722v-3.973h-7.223v3.973c0 .481-.241.722-.722.722h-1.084V36.76h1.084c.481 0 .722.24.722.722v3.973h7.223V37.48c0-.481.241-.722.722-.722ZM109.52 36.759h1.806v10.834h-1.083c-.482 0-.723-.24-.723-.722v-7.87l-7.222 8.592h-1.806V36.76h1.083c.482 0 .723.24.723.722v7.87l7.222-8.592ZM98.917 36.759l-4.545 5.417 4.545 5.417h-1.4c-.481 0-.918-.24-1.324-.722l-3.325-3.973h-1.716v4.695H90.07c-.482 0-.723-.24-.723-.722v-3.973h-1.715l-3.326 3.973c-.406.481-.842.722-1.324.722h-1.4l4.545-5.417-4.544-5.417h1.4c.48 0 .917.24 1.323.722l3.326 3.973h1.715v-4.695h1.084c.481 0 .722.24.722.722v3.973h1.716l3.325-3.973c.406-.481.843-.722 1.324-.722h1.4ZM78.913 36.759h1.084v10.834h-1.084c-.481 0-.722-.24-.722-.722v-3.973h-7.223v3.973c0 .481-.24.722-.722.722h-1.083V36.76h1.083c.482 0 .722.24.722.722v3.973h7.223V37.48c0-.481.24-.722.722-.722ZM65.245 36.759h1.806v10.834h-1.084c-.481 0-.722-.24-.722-.722v-7.87l-7.223 8.592h-1.806V36.76H57.3c.481 0 .722.24.722.722v7.87l7.223-8.592Z" fill="#151515"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h47.944v47.944H0V0Zm6.164 3.425H44.52V44.52H23.972V15.067H41.78V6.165H6.164v8.904h14.384v3.768H3.424V3.425h2.74ZM41.78 19.178H28.082v8.22h9.931v4.109h-9.931v8.904H41.78V19.178ZM23.972 41.78H7.534V18.836h-4.11V44.52h20.548v-2.74Z" fill="#338DCE"/>
+                </svg>
+            </a>
+            <nav class="nav">
+                <ul class="nav_list list">
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            главная
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            услуги
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            о компании
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            партнеры
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            контакты
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            цены
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            проекты
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link list-item_link--color" href="#">
+                            свяжитесь с нами
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="main">
+        <section class="main--swiper">
+            <section class="main-section main-section--margin">
+                <h1 class="main-section_h1">
+                    Испытания
+                    свайного фундамента
+                </h1>
+                <p class="main-section_p main-section_p--color">
+                    Оставьте заявку на бесплатную консультацию! Рассчитаем методику и стоимость испытаний за 7 минут
+                </p>
+                <button class="main-section_button button">
+                    Свяжитесь с нами
+                </button>
+            </section>
+            <section class="main-section">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="main-section_img--swiper" src="./img/jpg/Frame 145.jpg" width="1021px" height="608px" alt="">
+                    </div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <span class="main-section_span">
+                    19.03.2024
+                </span>
+                <h2 class="main-section_h2">
+                    Название проекта
+                </h2>
+                <p class="main-section_p">
+                    Описание описание описание описание описание описание описание описание описание описание описание описание описание 
+                    описание описание описание описание описание описание описание 
+                </p>
+            </section>
+        </section>
+        <section class="section-services">
+            <div class="section-services_div">
+                <h2 class="section-services_h2">
+                    Наши услуги
+                </h2>
+                <a  class="section-services_link-option" href="#">
+                    все услуги
+                </a>
+            </div>
+            <ul class="section-services_list">
+                <li class="section-services_list-item">
+                    <a class="link-services" href="#">
+                        <img class="img-services" src="" alt="">
+                        <h3 class="h3-services">
+                            Полевые испытания
+                        </h3>
+                        <a class="link-services_button" href="#">
+                            подробнее
+                        </a>
+                    </a>
+                </li>
+                <li class="section-services_list-item">
+                    <a class="link-services" href="#">
+                        <img class="img-services" src="" alt="">
+                        <h3 class="h3-services">
+                            Штамповые испытания грунтов
+                        </h3>
+                        <a class="link-services_button" href="#">
+                            подробнее
+                        </a>
+                    </a>
+                </li>
+                <li class="section-services_list-item">
+                    <a class="link-services" href="#">
+                        <img class="img-services" src="" alt="">
+                        <h3 class="h3-services">
+                            Испытания свай неразрушающим методом
+                        </h3>
+                        <a class="link-services_button" href="#">
+                            подробнее
+                        </a>
+                    </a>
+                </li>
+                <li class="section-services_list-item">
+                    <a class="link-services" href="#">
+                        <img class="img-services" src="" alt="">
+                        <h3 class="h3-services">
+                            Контроль качества сварных соединений
+                        </h3>
+                        <a class="link-services_button" href="#">
+                            подробнее
+                        </a>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="section-company">
+            <div class="section-company_div">
+                <h2 class="section-company_h2">
+                    о компании
+                </h2>
+                <p class="section-company_p">
+                    Компания ГЕОТЕСТ специализируется на полевых испытаниях грунтов сваями, а также диагностике свай, сварных соединений и бетона. 
+                    Предоставляем услуги по оценке надежности и несущей
+                     способности свайных фундаментов. Мы используем только современное оборудование и гарантируем высокую точность результатов!
+                </p>
+                <a class="section-company_link" href="#">
+                    подробнее
+                </a>
+            </div>
+            <div class="section-company_div">
+                <img src="" alt="">
+            </div>
+        </section>
+        <section class="section-advantages">
+            <ul class="advantages-list">
+                <li class="advantages-list-item">
+                    <h2 class="item_h2">
+                        Почему рекомендуют именно нас ?
+                    </h2>
+                </li>
+                <li class="advantages-list-item">
+                    <span class="advantages-list-item_span">
+                        1
+                    </span>
+                    <p class="advantages-list-item_p">
+                        Предоставление протокола испытаний за 24 часа
+                    </p>
+                </li>
+                <li class="advantages-list-item">
+                    <span class="advantages-list-item_span">
+                        2
+                    </span>
+                    <p class="advantages-list-item_p">
+                        Наличие собственного современного оборудования
+                    </p>
+                </li>
+                <li class="advantages-list-item">
+                    <span class="advantages-list-item_span">
+                        3
+                    </span>
+                    <p class="advantages-list-item_p">
+                        Опытная команда технических специалистов
+                    </p>
+                </li>
+                <li class="advantages-list-item">
+                    <span class="advantages-list-item_span">
+                        4
+                    </span>
+                    <p class="advantages-list-item_p">
+                        Проводим испытания в соответствии с СП, ГОСТ и СНИП
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="section-client">
+            <h2 class="section-client_h2">
+                Компании, которые работают с нами
+            </h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+        <section class="section-offer">
+            <h2 class="section-offer_h2">
+                Заказчик требует протоколы испытаний?
+            </h2>
+            <p class="section-offer_p">
+                Оставьте заявку и получите выгодное предложение в течение 15 минут
+            </p>
+            <button class="section-offer_button button">
+                Получить предложение
+            </button>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="section-footer--flex">
+            <section class="section-footer">
+                <h2 class="section-footer_h2">
+                    Свяжитесь с нами
+                </h2>
+                <ul class="section-footer_list">
+                    <li class="section-footer_list-item">
+                        <img class="section-footer_img" src="" alt="">
+                        <a class="section-footer_link" href="#">
+                            +7 (812) 209 33 99
+                        </a>
+                    </li>
+                    <li class="section-footer_list-item">
+                        <a class="section-footer_link" href="#">
+                            +7 (921) 388 65 10
+                        </a>
+                    </li>
+                    <li class="section-footer_list-item">
+                        <img src="" alt="">
+                        <a class="section-footer_link" href="#">
+                            @telegramname 
+                        </a>
+                    </li>
+                    <li class="section-footer_list-item">
+                        <img src="" alt="">
+                        <a class="section-footer_link" href="#">
+                            geo.test.ing@yandex.ru 
+                        </a>
+                    </li>
+                    <li class="section-footer_list-item">
+                        <img src="" alt="">
+                        <a class="section-footer_link" href="#">
+                            196105, Санкт-Петербург, пр. Юрия Гагарина, дом 2, литера А, пом. 15-Н, офис 21 
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="section-footer">
+                <img src="" alt="">
+            </section>
+        </section>
+        <section class="section-footer-contact">
+            <ul class="contact-list">
+                <li class="contact-list-item">
+                    <a class="contact-list-item_a" href="#">
+                        услуги
+                    </a>
+                </li>
+                <li class="contact-list-item">
+                    <a class="contact-list-item_a" href="#">
+                        контакты
+                    </a>
+                </li>
+                <li class="contact-list-item">
+                    <a class="contact-list-item_a" href="#">
+                        партнеры
+                    </a>
+                </li>
+                <li class="contact-list-item">
+                    <a class="contact-list-item_a" href="#">
+                        о компании
+                    </a>
+                </li>
+                <li class="contact-list-item">
+                    <a class="contact-list-item_a" href="#">
+                        цены
+                    </a>
+                </li>
+            </ul>
+        </section>
+            <svg width="376" height="69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M335.814.387H376V2.98c0 1.728-.864 2.592-2.593 2.592h-14.259v33.705h-6.482V5.572h-14.26c-1.728 0-2.592-.864-2.592-2.592V.387ZM330.235 34.092c1.728 0 2.592.864 2.592 2.592v2.593h-23.334c-9.074 0-13.611-4.537-13.611-13.612V13.998c0-9.074 4.537-13.611 13.611-13.611h22.686V2.98c0 1.728-.864 2.592-2.593 2.592H310.79c-5.618 0-8.427 2.809-8.427 8.426v11.667c0 5.618 2.809 8.427 8.427 8.427h19.445ZM287.363 34.092c1.728 0 2.593.864 2.593 2.592v2.593H253.01V.387h36.297V2.98c0 1.728-.864 2.592-2.592 2.592h-27.223V17.24h27.871v5.186h-27.871v11.667h27.871ZM207.953.387h40.186V2.98c0 1.728-.864 2.592-2.592 2.592h-14.26v33.705h-6.481V5.572h-14.26c-1.729 0-2.593-.864-2.593-2.592V.387ZM190.007.387c9.074 0 13.611 4.537 13.611 13.611v11.667c0 9.075-4.537 13.612-13.611 13.612h-12.963c-9.075 0-13.612-4.537-13.612-13.612V13.998c0-9.074 4.537-13.611 13.612-13.611h12.963Zm7.13 25.278V13.998c0-5.617-2.809-8.426-8.426-8.426H178.34c-5.617 0-8.426 2.809-8.426 8.426v11.667c0 5.618 2.809 8.427 8.426 8.427h10.371c5.617 0 8.426-2.81 8.426-8.427ZM154.914 34.092c1.728 0 2.592.864 2.592 2.592v2.593h-36.945V.387h36.297V2.98c0 1.728-.864 2.592-2.593 2.592h-27.223V17.24h27.872v5.186h-27.872v11.667h27.872ZM80.684.387h35.001v2.592c0 1.729-.865 2.593-2.593 2.593H87.165v31.112c0 1.729-.864 2.593-2.592 2.593h-3.89V.387ZM254.407 52.753h13.994v1.037c0 .691-.346 1.037-1.037 1.037h-10.365v12.438c0 .691-.346 1.037-1.037 1.037h-1.555V52.753ZM249.821 52.753h1.555v15.549h-1.555c-.691 0-1.037-.346-1.037-1.037v-5.7h-10.365v5.7c0 .691-.346 1.037-1.037 1.037h-1.555V52.753h1.555c.691 0 1.037.346 1.037 1.037v5.701h10.365V53.79c0-.691.346-1.037 1.037-1.037ZM230.206 52.753h2.591v15.549h-1.555c-.691 0-1.036-.346-1.036-1.037V55.971l-10.366 12.33h-2.591V52.754h1.555c.691 0 1.036.346 1.036 1.037v11.294l10.366-12.33ZM210.58 52.753c2.937 0 4.406 1.469 4.406 4.406 0 2.937-1.469 4.405-4.406 4.405h-8.033v5.701c0 .691-.346 1.037-1.037 1.037h-1.554V52.753h10.624Zm-.518 6.738c1.555 0 2.332-.777 2.332-2.332 0-1.555-.777-2.332-2.332-2.332h-7.515v4.664h7.515ZM194.334 52.753h2.591v15.549h-1.555c-.691 0-1.036-.346-1.036-1.037V55.971l-10.366 12.33h-2.591V52.754h1.554c.692 0 1.037.346 1.037 1.037v11.294l10.366-12.33ZM176.791 52.753h1.554v15.549h-1.554c-.692 0-1.037-.346-1.037-1.037v-5.7h-10.366v5.7c0 .691-.345 1.037-1.036 1.037h-1.555V52.753h1.555c.691 0 1.036.346 1.036 1.037v5.701h10.366V53.79c0-.691.345-1.037 1.037-1.037ZM157.174 52.753h2.592v15.549h-1.555c-.691 0-1.037-.346-1.037-1.037V55.971l-10.365 12.33h-2.592V52.754h1.555c.691 0 1.037.346 1.037 1.037v11.294l10.365-12.33ZM141.957 52.753l-6.522 7.775 6.522 7.774h-2.009c-.691 0-1.317-.346-1.9-1.037l-4.772-5.7h-2.462v6.737h-1.555c-.691 0-1.037-.346-1.037-1.037v-5.7h-2.461l-4.773 5.7c-.583.691-1.209 1.037-1.9 1.037h-2.009l6.522-7.775-6.522-7.774h2.009c.691 0 1.317.346 1.9 1.037l4.773 5.701h2.461v-6.738h1.555c.691 0 1.037.346 1.037 1.037v5.701h2.462l4.772-5.701c.583-.691 1.209-1.037 1.9-1.037h2.009ZM113.25 52.753h1.555v15.549h-1.555c-.691 0-1.037-.346-1.037-1.037v-5.7h-10.365v5.7c0 .691-.346 1.037-1.037 1.037h-1.555V52.753h1.555c.691 0 1.037.346 1.037 1.037v5.701h10.365V53.79c0-.691.346-1.037 1.037-1.037ZM93.634 52.753h2.591v15.549h-1.554c-.691 0-1.037-.346-1.037-1.037V55.971L83.269 68.3h-2.592V52.754h1.555c.69 0 1.037.346 1.037 1.037v11.294l10.365-12.33Z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h68.806v68.806H0V0Zm8.846 4.915h55.045v58.976H34.403V21.625h25.556V8.847H8.846v12.778h20.642v5.406H10.813V59.96h23.59v3.932H4.915V4.915h3.931ZM59.96 27.523H40.301v11.795h14.252v5.898H40.301v12.778h19.658V27.523Z" fill="#fff"/>
+            </svg>
+    </footer>
+</body>
+</html>
