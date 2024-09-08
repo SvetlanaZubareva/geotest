@@ -71,10 +71,18 @@
     font-size: 64px;
     line-height: 60px;
   }
+  .main-section{
+    position: relative;
+  }
   .main-section_p{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    position: absolute;
+    padding-left: 55px;
+    z-index: 100;
+    top: 510px;
+    width: 720px;
   }
   .main-section_button{
     font-weight: 600;
@@ -101,8 +109,16 @@
     color: #fff;
     padding-bottom: 13px;
     border-bottom: 1px #fff solid;
+    position: absolute;
+    top: 14px;
+    z-index: 100;
+    width: 1021px;
+    padding-bottom: 13px;
+    border-bottom: 1px #fff solid;
+    padding-left: 53px;
   }
   .main-section_h2{
+
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
@@ -110,17 +126,22 @@
     padding: 19px 0 19px;
     border: 1px 0 1px #fff solid;
   }
+  .main-section_h2--font{
+    font-family: "Inter"; 
+    position: absolute;
+    top: 410px;
+    z-index: 100;
+    padding: 19px 0 19px;
+    padding-left: 55px;
+    border-top: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    width: 100%;
+  }
   .main-section_p{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #ffff;
-  }
-  .section-company_p{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #03233A;
   }
   .section-company_link{
     background-color: #fff;
@@ -298,6 +319,10 @@
     color: #151515;
     margin: 20px 0 20px;
     width: 380px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Inter"
   }
   .main-section_img--swiper{
     border-radius: 15px;
@@ -348,7 +373,12 @@
   }
   .section-company_p{
     width: 95%;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
+    font-family: "Inter"; 
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #03233A;
   }
   .section-services_h2{
     text-transform: uppercase;
@@ -516,6 +546,9 @@
 .c1{
   display: inline-block;
 }
+.c1--margin{
+  margin-bottom: 45px;
+}
 .c2{
   display: inline-block;
 }
@@ -531,6 +564,46 @@ h2 .type{
   width: 0;
   animation: 
     typing 1s steps(25, end) forwards;
+}
+h2 .type2{ 
+  overflow: hidden;
+  white-space: nowrap; 
+  width: 0;
+  animation: 
+    typing 1s steps(25, end) forwards;
+  animation-delay: 1s;
+}
+h2 .type3{ 
+  overflow: hidden;
+  white-space: nowrap; 
+  width: 0;
+  animation: 
+    typing 1s steps(25, end) forwards;
+  animation-delay: 2s;
+}
+h2 .type4{ 
+  overflow: hidden;
+  white-space: nowrap; 
+  width: 0;
+  animation: 
+    typing 1s steps(25, end) forwards;
+  animation-delay: 3s;
+}
+h2 .type5{ 
+  overflow: hidden;
+  white-space: nowrap; 
+  width: 0;
+  animation: 
+    typing 1s steps(25, end) forwards;
+  animation-delay: 4s;
+}
+h2 .type6{ 
+  overflow: hidden;
+  white-space: nowrap; 
+  width: 0;
+  animation: 
+    typing 1s steps(25, end) forwards;
+  animation-delay: 5s;
 }
 h1 .type{
     overflow: hidden;
