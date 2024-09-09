@@ -6,8 +6,7 @@
     <title>Геотест</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font/font.css">
-    <link rel="stylesheet" href="./vendor/package/swiper-bundle.min.css">
-    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -97,7 +96,7 @@
                 </button>
             </section>
             <section class="main-section">
-                <div class="swiper swiper1">
+                <div class="swiper swiper1" id="swiper1">
                     <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img class="main-section_img--swiper" src="./img/jpg/Frame 145.jpg" width="1021px" height="608px" alt="">
@@ -114,7 +113,7 @@
                     </div>
                     <div class="swiper-slide">
                         <img class="main-section_img--swiper" src="./img/jpg/Frame 145.jpg" width="1021px" height="608px" alt="">
-                        <span class="main-section_span"></span>
+                        <span class="main-section_span">
                             19.03.2024
                         </span>
                         <h2 class="main-section_h2 main-section_h2--font">
@@ -127,7 +126,7 @@
                     </div>
                     <div class="swiper-slide">
                         <img class="main-section_img--swiper" src="./img/jpg/Frame 145.jpg" width="1021px" height="608px" alt="">
-                        <span class="main-section_span"></span>
+                        <span class="main-section_span">
                             19.03.2024
                         </span>
                         <h2 class="main-section_h2 main-section_h2--font">
@@ -140,10 +139,9 @@
                     </div>
                     </div>
                     <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev swiper-button-prev--color" 
-                    >
+                    <div class="swiper-button-prev swiper-button-prev--color" id="swiper-button-prev--color">
                     </div>
-                    <div class="swiper-button-next swiper-button-next--color" >
+                    <div class="swiper-button-next swiper-button-next--color" id="swiper-button-next--color">
                     </div>
                     <div class="swiper-scrollbar"></div>
                 </div>
@@ -297,68 +295,122 @@
             <h2 class="section-client_h2">
                 Компании, которые <br> работают с нами
             </h2>
-            <div class="swiper swiper2">
-                <div class="swiper-wrapper swiper-wrapper2">
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px" height="176px" alt="">
-                </div>
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
-                </div>
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
-                </div>
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
-                </div> 
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
-                </div>
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
-                </div>
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
-                </div> 
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
-                </div> 
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
-                </div>
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
-                </div>
-                <div class="swiper-slide swiper-slide2">
-                    <img src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
-                </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev swiper-button-prev2"></div>
-                <div class="swiper-button-next swiper-button-next2"></div>
-                <!-- <div class="swiper-scrollbar"></div> -->
+            <div class="div-client--margin">
+                <section class="section-swiper--padding">
+                    <div class="swiper swiper2" id="swiper2">
+                        <div class="swiper-wrapper swiper-wrapper2" id="swiper-wrapper2">
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img src="./img/png/Rectangle 184.png" width="205px" height="176px" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                            </div> 
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                            </div> 
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                            </div> 
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                                <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev swiper-button-prev2" id="swiper-button-prev2"></div>
+                        <div class="swiper-button-next swiper-button-next2" id="swiper-button-next2"></div>
+                    </div>
+                </section>
             </div>
+            <!-- <section class="section-swiper--padding">
+                <div class="swiper swiper2" id="swiper2">
+                    <div class="swiper-wrapper swiper-wrapper2" id="swiper-wrapper2">
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img src="./img/png/Rectangle 184.png" width="205px" height="176px" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                        </div> 
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                        </div> 
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                        </div> 
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide2" id="swiper-slide2">
+                            <img id="swiper-slide2" src="./img/png/Rectangle 184.png" width="205px"  height="176px" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev swiper-button-prev2" id="swiper-button-prev2"></div>
+                    <div class="swiper-button-next swiper-button-next2" id="swiper-button-next2"></div>
+                </div>
+            </section> -->
         </section>
+    </section>
         <section class="section--gradient">
             <section class="section-offer">
                 <div class="container--animation">
-                    <ul class="container_list--animation">
-                        <li class="container_list-item--animation">
+                    <div class="stage container_list-item--animation">
+                        <div class="box bounce-1">
                             <img class="conttainer_img--animation" src="./img/png/блок 3 2.png" alt="">
-                        </li>
-                        <li class="container_list-item--animation container_list-item--animation1">
+                        </div>
+                    </div>
+                    <div class="stage stage1 container_list-item--animation">
+                        <div class="box bounce-2">
                             <img class="conttainer_img--animation" src="./img/png/блок 1 2.png" alt="">
-                        </li>
-                        <li class="container_list-item--animation container_list-item--animation2">
+                        </div>
+                    </div>
+                    <div class="stage stage2 container_list-item--animation">
+                        <div class="box bounce-3">
                             <img class="conttainer_img--animation" src="./img/png/блок 2 2.png" alt="">
-                        </li>
-                        <li class="container_list-item--animation container_list-item--animation3">
+                        </div>
+                    </div>
+                    <div class="stage stage3 container_list-item--animation">
+                        <div class="box bounce-4">
                             <img class="conttainer_img--animation" src="./img/png/блок 1 1.png" alt="">
-                        </li>
-                        <li class="container_list-item--animation container_list-item--animation4">
+                        </div>
+                    </div> 
+                    <div class="stage stage4 container_list-item--animation">
+                        <div class="box bounce-5">
                             <img class="conttainer_img--animation" src="./img/png/блок 3 1.png" alt="">
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
                 <h2 class="section-offer_h2">
                     Заказчик требует <br> протоколы испытаний?
@@ -407,10 +459,19 @@
                                 </a>
                             </li>
                             <li class="section-footer_list-item">
-                                <img class="section-footer_svg" src="./img/svg/Mask group (1).svg" alt="">
-                                <a class="section-footer_link" href="#">
-                                    196105, Санкт-Петербург, пр. Юрия Гагарина, <br> дом 2, литера А, пом. 15-Н, офис 21 
-                                </a>
+                                <div class="adress--flex">
+                                    <img class="section-footer_svg" src="./img/svg/Mask group (1).svg" alt="">
+                                    <p class="section-footer_link" href="#">
+                                        196105, Санкт-Петербург, пр. Юрия Гагарина,  
+                                    </p>
+                                </div>
+                                <!-- <img class="section-footer_svg" src="./img/svg/Mask group (1).svg" alt="">
+                                <p class="section-footer_link" href="#">
+                                    196105, Санкт-Петербург, пр. Юрия Гагарина,  
+                                </p> -->
+                                <p class="section-footer_link section-footer_link--margin" href="#">
+                                    дом 2, литера А, пом. 15-Н, офис 21
+                                </p>
                             </li>
                         </ul>
                     </section>
@@ -458,7 +519,13 @@
                 </svg>
             </div>
         </section>
+        <div class="stage">
+            <div class="box bounce-1"></div>
+        </div>
     </footer>
+    
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="script.js"></script>
 </body>
 </html>

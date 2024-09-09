@@ -242,6 +242,9 @@
     line-height: 24px;
     color: #151515;
   }
+  .section-offer_button:hover{
+    background-color: #fff;
+  }
   .section-footer_h2{
     font-weight: 400;
     font-size: 64px;
@@ -485,6 +488,7 @@
     color: #151515;
     margin-bottom: 30px;
     text-transform: uppercase;
+    position: relative;
   }
   .section-offer_p{
     margin-bottom: 60px;
@@ -529,7 +533,9 @@
   }
   iframe{
     width: 100%;
-    height: 482px;
+    height: 475px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
   .section-footer-contact{
     background-color: #03233A;
@@ -549,7 +555,12 @@
   .section-footer_svg{
     margin-left: 5px;
   }
-
+  .adress--flex{
+    display: flex;
+  }
+  .section-footer_link--margin{
+    margin-left: 30px;
+  }
 /* Пишем стили для анимации текста */
 .c1{
   display: inline-block;
@@ -668,10 +679,10 @@ h1 .type6{
   from { border-color: transparent }
   to { border-color: orange; }
 }
-.container--animation{
+/* .container--animation{
   position: relative;
-}
-.container_list-item--animation{
+} */
+/* .container_list-item--animation{
   position: absolute;
 }
 .container_list-item--animation:nth-child(1){
@@ -694,7 +705,7 @@ h1 .type6{
 .container_list-item--animation:nth-child(5){
   left: 1500px;
   top: 50px;
-}
+} */
 .footer{
   position: relative;
 }
@@ -702,13 +713,177 @@ h1 .type6{
   background: linear-gradient(#fff, #c0daf2);
   padding-bottom: 15px;
 }
-/* анимация кубов */
-.contact-list-item {
-  animation-name: contact-list-item;
-  animation-timing-function: linear;
+.swiper2{
+  width: 1860px;
+  background-color: #F0F5FF;
 }
-@keyframes contact-list-item {
+#swiper2{
+  width: 100%;
+}
+.section-swiper--padding{
+  width: 1860px;
+  background-color: #F0F5FF;
+  border-radius: 15px; 
+  padding: 32px 0 32px; 
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.div-client--margin{
+  margin: 0 auto;
+}
+#swiper-button-prev--color{
+  color: #fff; 
+  border: 1px #fff solid; 
+  border-radius: 100%; 
+  width: 44px; 
+  height: 44px;
+  top: 60%;
+  left: 30px;
+}
+#swiper-button-prev--color{
+  color: #fff; 
+  border: 1px #fff solid; 
+  border-radius: 100%; 
+  width: 44px; 
+  height: 44px;
+  top: 60%;
+  left: 30px;
+}
+#swiper-button-prev2{
+  background-color: #fff;
+  color: #03233A;
+  left: 44px;
+}
+#swiper-button-next--color{
+  color: #fff;
+  border: 1px #fff solid;
+  border-radius: 100%; 
+  width: 44px; 
+  height: 44px;
+  top: 60%;
+  left: 100px;
+}
+#swiper-button-next2{
+  background-color: #fff;
+  color: #03233A;
+  border-radius: 100%; 
+  width: 44px; 
+  height: 44px;
+  left: 1741px;
+}
+#swiper-button-prev2{
+  background-color: #fff;
+  color: #03233A;
+  border-radius: 100%; 
+  width: 44px; 
+  height: 44px;
+  left: 44px;
+}
+/* #swiper2{
+  width: 1860px;
+  background-color: #F0F5FF; 
+  border-radius: 15px; 
+  padding: 32px 0 32px; 
+  box-sizing: border-box;
+} */
+#swiper-slide2{
+  width: 205px;
+  cursor: pointer;
+}
+#swiper-slide2:hover{
+  width: 220px;
+  height: 192px;
+}
+#swiper1{
+  border-radius: 15px;
+} 
+:root {
+  --swiper-navigation-size: 30px;
+}
+/* анимация кубов */
+.container_list-item--animation:hover{
+  top: 20px;
+  cursor: pointer;
+}
+.box {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.stage{
+  top: 50px;
+  left: 92px;
+  position: absolute;
+  cursor: pointer;
+}
+.stage1{
+  top: 250px;
+  left: 500px;
+  position: absolute;
+}
+.stage2{
+  top: 350px;
+  left: 800px;
+  position: absolute;
+}
+.stage3{
+  top: 250px;
+  left: 1200px;
+  position: absolute;
+}
+.stage4{
+  top: 200px;
+  left: 1500px;
+  position: absolute;
+}
+.bounce-1 {
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+  width: 100%;
+}
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: linear;
+  width: 100%;
+}
+.bounce-3 {
+  animation-name: bounce-3;
+  animation-timing-function: linear;
+  width: 100%;
+}
+.bounce-4 {
+  animation-name: bounce-4;
+  animation-timing-function: linear;
+  width: 100%;
+}
+.bounce-5 {
+  animation-name: bounce-5;
+  animation-timing-function: linear;
+  width: 100%;
+}
+@keyframes bounce-1 {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-100px); }
+  50%  { transform: translateY(20px); }
+  100% { transform: translateY(0); }
+}
+@keyframes bounce-2 {
+  0%   { transform: translateY(20px); }
+  50%  { transform: translateY(0); }
+  100% { transform: translateY(20px); }
+}
+@keyframes bounce-3 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+@keyframes bounce-4 {
+  0%   { transform: translateY(20px); }
+  50%  { transform: translateY(0); }
+  100% { transform: translateY(20px); }
+}
+@keyframes bounce-5 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(30px); }
   100% { transform: translateY(0); }
 }
