@@ -226,6 +226,7 @@
     font-size: 20px;
     line-height: 24px;
     color: #404040;
+    position: relative;
   }
   .section-offer_button{
     width: 332px;
@@ -476,10 +477,14 @@
     padding: 137px 0 105px;
     text-align: center;
     align-content: center;
+    /* height: 750px; */
+    position: relative;
+    /* background: linear-gradient(#fff, #c0daf2); */
   }
   .section-offer_h2{
     color: #151515;
     margin-bottom: 30px;
+    text-transform: uppercase;
   }
   .section-offer_p{
     margin-bottom: 60px;
@@ -489,6 +494,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    position: relative;
   }
   .section-footer--flex{
     display: grid;
@@ -503,6 +509,8 @@
     height: 475px;
     padding-right: 0;
     border-radius: 15px;
+    z-index: 100;
+    position: relative;
   }
   .section-footer--margin{
     margin: 0 auto;
@@ -659,4 +667,48 @@ h1 .type6{
 @keyframes blink {
   from { border-color: transparent }
   to { border-color: orange; }
+}
+.container--animation{
+  position: relative;
+}
+.container_list-item--animation{
+  position: absolute;
+}
+.container_list-item--animation:nth-child(1){
+  left: 92px;
+  top: 120px;
+}
+.container_list-item--animation:nth-child(2){
+  position: absolute;
+  left: 484px;
+  top: 120px;
+}
+.container_list-item--animation:nth-child(3){
+  left: 680px;
+  top: 120px;
+}
+.container_list-item--animation:nth-child(4){
+  left: 1100px;
+  top: 80px;
+}
+.container_list-item--animation:nth-child(5){
+  left: 1500px;
+  top: 50px;
+}
+.footer{
+  position: relative;
+}
+.section--gradient{
+  background: linear-gradient(#fff, #c0daf2);
+  padding-bottom: 15px;
+}
+/* анимация кубов */
+.contact-list-item {
+  animation-name: contact-list-item;
+  animation-timing-function: linear;
+}
+@keyframes contact-list-item {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-100px); }
+  100% { transform: translateY(0); }
 }

@@ -246,7 +246,7 @@
     height: var(--swiper-virtual-size);
   }
   :root {
-    --swiper-navigation-size: 44px;
+    --swiper-navigation-size: 30px;
     /*
     --swiper-navigation-top-offset: 50%;
     --swiper-navigation-sides-offset: 10px;
@@ -265,7 +265,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
   }
   .swiper-button-prev.swiper-button-disabled,
   .swiper-button-next.swiper-button-disabled {
@@ -309,7 +308,7 @@
     left: auto;
   }
   .swiper-button-lock {
-    display: none;
+    display: block;
   }
   /* Navigation font start */
   .swiper-button-prev:after,
@@ -740,5 +739,54 @@
   .swiper2{
     width: 1860px;
     background-color: #F0F5FF;
+  }
+  .swiper-button-prev--color{
+    color: #fff; 
+    border: 1px #fff solid; 
+    border-radius: 100%; 
+    width: 44px; 
+    height: 44px;
+    top: 60%;
+    left: 30px;
+  }
+  .swiper-button-prev2{
+    background-color: #fff;
+    color: #03233A;
+    left: 44px;
+  }
+  .swiper-button-next--color{
+    color: #fff;
+    border: 1px #fff solid;
+    border-radius: 100%; 
+    width: 44px; 
+    height: 44px;
+    top: 60%;
+    left: 100px;
+  }
+  .swiper-button-next2{
+    background-color: #fff;
+    color: #03233A;
+    border-radius: 100%; 
+    width: 44px; 
+    height: 44px;
+    left: 1741px;
+  }
+  .swiper2{
+    width: 1869px; 
+    background-color: #F0F5FF; 
+    border-radius: 15px; 
+    padding: 32px 44px 32px; 
+    box-sizing: border-box;
+  }
+  .swiper-wrapper2{
+    display: flex; 
+    justify-content: center;
+  }
+  .swiper-slide2{
+    width: 205px;
+    box-sizing: border-box;
+  }
+  .swiper1{
+    border-radius: 15px;
   }
   

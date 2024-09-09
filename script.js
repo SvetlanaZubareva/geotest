@@ -32,7 +32,7 @@ const slider = () => {
   });
 }
 
-// код для первого слайдера
+// код для второго слайдера
 const slider2 = () => {
   if (!swiperContainer2) {
       return ;
@@ -40,7 +40,7 @@ const slider2 = () => {
 
   const swiper = new Swiper(swiperContainer2, {
     direction: 'horizontal',
-    slidesPerView: 'auto',
+    slidesPerView: 7,
     observer: true,
     spaceBetween: 15,
     loop: true,

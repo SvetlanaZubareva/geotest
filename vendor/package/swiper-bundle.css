@@ -733,3 +733,13 @@ button.swiper-pagination-bullet {
           backface-visibility: hidden;
   overflow: hidden;
 }
+.swiper-button-prev--color{
+  color: #fff; 
+                  border: 1px #fff solid; 
+                  border-radius: 100%; 
+                  width: 44px; 
+                  height: 44px;
+                  top: 60%;
+                  left: 30px;
+}
+
