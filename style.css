@@ -561,6 +561,64 @@
   .section-footer_link--margin{
     margin-left: 30px;
   }
+  .main-company_list-nav_div{
+    width: 79%;
+    margin: 0 auto;
+    margin-top: 150px;
+  }
+  .main-company_list-nav{
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .main-company_section--grid{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    margin: 0 auto;
+    width: 95%;
+    gap: 30px;
+    margin-bottom: 114px;
+  }
+  .main-company_img{
+    width: 100%;
+    height: 436px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+  .section-process{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 88px;
+  }
+  .section-price{
+    margin-top: 110px;
+  }
+  .section-price_h2{
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .section-price_list{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .section-price_list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .section-price_list-item{
+    background-color: #f0f5ff;
+    border-radius: 50px;
+    height: 88px;
+    padding: 15px 60px 15px;
+    box-sizing: border-box;
+  }
+  .section-price_ul{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 80% 20%;
+  }
 /* Пишем стили для анимации текста */
 .c1{
   display: inline-block;
@@ -748,6 +806,10 @@ h1 .type6{
   top: 60%;
   left: 100px;
 }
+.swiper-slide_span--color{
+  color: #fff;
+  background-color: #338dce;
+}
 #swiper-button-next2{
   background-color: #fff;
   color: #03233A;
@@ -764,6 +826,34 @@ h1 .type6{
   height: 44px;
   left: 44px;
 }
+#swiper-button-prev3{
+  left: -10%;
+  position: absolute;
+  z-index: 1000;
+  color: #151515;
+  height: 78px;
+  width: 78px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f5ff;
+  border-radius: 100px;
+}
+#swiper-button-next3{
+  right: -10%;
+  position: absolute;
+  z-index: 1000;
+  color: #151515;
+  height: 78px;
+  width: 78px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f5ff;
+  border-radius: 100px;
+}
 .swiper-slide-img{
   width: 100%;
   object-fit: cover;
@@ -774,6 +864,177 @@ h1 .type6{
 } 
 :root {
   --swiper-navigation-size: 30px;
+}
+.main-company_link--color{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #909090;
+}
+.main-company_link{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #404040;
+}
+.main-company_section-h2--color{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400px;
+  font-size: 64px;
+  line-height: 64px;
+  color: #fff;
+  text-transform: uppercase;
+  height: 214px;
+  width: 100%;
+  background-color: #151515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.main-company_section-div{
+  background-color: #151515;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.list-company{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  width: 100%;
+}
+.list-company_item{
+  background-color: #f0f5ff;
+  border-radius: 15px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.list-company_button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 57px;
+  border-radius: 10px;
+  border: 2px #338DCE solid;
+  background-color: inherit;
+}
+.list-company_item:nth-child(1){
+  display: grid;
+  grid-template-columns: 75% 15%;
+  gap: 30px;
+}
+.list-company_p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #151515;
+  text-transform: uppercase;
+}
+.list-company_p--width{
+  width: 700px;
+}
+.list-company_span{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #151515;
+  text-transform: uppercase;
+}
+.section-process_h2{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400px;
+  font-size: 64px;
+  line-height: 64px;
+  color: #151515;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-process_p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #404040;
+}
+.swiper-slide_span{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400px;
+  font-size: 48px;
+  line-height: 66px;
+  color: #03233A;
+  text-transform: uppercase;
+}
+.swiper-slide_p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #03233A;
+  text-align: center;
+  padding: 15px 0 30px;
+}
+.section-price_h2{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400px;
+  font-size: 64px;
+  line-height: 64px;
+  color: #151515;
+  text-transform: uppercase;
+}
+.section-price_li:nth-child(1){
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(0, 0, 1);
+}
+.section-price_li--color{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(51,141, 206, 1);
+}
+.swiper-slide_div--width{
+  width: 100%;
+}
+.swiper-slide_span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f5ff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.swiper-slide_p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(51, 141, 206, 0.15);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+  padding: 15px 0 30px;
+}
+#swiper-wrapper-campony--center{
+  margin: 0 auto;
+  width: 75%;
+  position: relative;
+}
+.swiper-slide_div--width-color{
+  color: #fff;
+  background-color: #338dce;
+  border-radius: 25px;
 }
 /* анимация кубов */
 .container_list-item--animation:hover{

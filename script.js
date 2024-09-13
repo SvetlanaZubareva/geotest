@@ -4,12 +4,14 @@ import Swiper from './vendor/package/swiper-bundle.min.mjs';
 
 const swiperContainer = document.querySelector('.swiper');
 const swiperContainer2 = document.querySelector('.swiper2');
+const swiperContainer3 = document.querySelector('.swiper3');
 
 document.addEventListener(
     'DOMContentLoaded',
     () => {
         slider();
         slider2();
+        slider3();
     },
     true
 )
@@ -47,6 +49,25 @@ const slider2 = () => {
     navigation: {
       nextEl: '.swiper-button-next2',
       prevEl: '.swiper-button-prev2',
+    }
+  });
+}
+
+// код для третьего слайдера
+const slider3 = () => {
+  if (!swiperContainer3) {
+      return ;
+  };
+
+  const swiper = new Swiper(swiperContainer3, {
+    direction: 'horizontal',
+    slidesPerView: 3,
+    observer: true,
+    spaceBetween: 15,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next3',
+      prevEl: '.swiper-button-prev3',
     }
   });
 }
