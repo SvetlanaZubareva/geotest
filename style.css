@@ -982,6 +982,10 @@ h1 .type6{
   color: #03233A;
   text-align: center;
   padding: 15px 0 30px;
+  height: 132px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 0;
 }
 .section-price_h2{
   font-family: "Nebulosa Black", sans-serif;
@@ -1016,20 +1020,33 @@ h1 .type6{
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+#swiper-slide_span{
+  background-color: #f0f5ff;
+}
+.swiper-slide_span--color{
+  color: #fff;
+  background-color: rgba(51, 141, 206, 0.15);
+}
 .swiper-slide_p{
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   background-color: rgba(51, 141, 206, 0.15);
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   text-align: center;
   padding: 15px 0 30px;
 }
+.swiper-slide_p--color{
+  color: #fff;
+}
 #swiper-wrapper-campony--center{
   margin: 0 auto;
   width: 75%;
   position: relative;
+}
+.swiper-slide_div{
+  height: 198px;
 }
 .swiper-slide_div--width-color{
   color: #fff;
