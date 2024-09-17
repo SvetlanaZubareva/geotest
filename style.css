@@ -926,6 +926,9 @@ h1 .type6{
   border: 2px #338DCE solid;
   background-color: inherit;
 }
+/* .list-company_button:hover{
+  background-color: #338DCE;
+} */
 .list-company_item:nth-child(1){
   display: grid;
   grid-template-columns: 75% 15%;
