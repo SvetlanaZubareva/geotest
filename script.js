@@ -1,5 +1,3 @@
-import Swiper from './vendor/package/swiper-bundle.min.mjs';
-
 // код для первого слайдера
 
 const swiperContainer = document.querySelector('.swiper');
@@ -164,6 +162,3 @@ const observer = new IntersectionObserver(entries => {
   observer4.observe(document.querySelector('.animation4'));
   observer5.observe(document.querySelector('.animation5'));
   observer6.observe(document.querySelector('.animation6'));
-
-
-export {slider};
