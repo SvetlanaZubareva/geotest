@@ -5,6 +5,7 @@ import Swiper from './vendor/package/swiper-bundle.min.mjs';
 const swiperContainer = document.querySelector('.swiper');
 const swiperContainer2 = document.querySelector('.swiper2');
 const swiperContainer3 = document.querySelector('.swiper3');
+const swiperContainer4 = document.querySelector('.swiper4');
 
 document.addEventListener(
     'DOMContentLoaded',
@@ -12,6 +13,7 @@ document.addEventListener(
         slider();
         slider2();
         slider3();
+        slider4();
     },
     true
 )
@@ -62,6 +64,24 @@ const slider3 = () => {
   const swiper = new Swiper(swiperContainer3, {
     direction: 'horizontal',
     slidesPerView: 3,
+    observer: true,
+    spaceBetween: 15,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next3',
+      prevEl: '.swiper-button-prev3',
+    }
+  });
+}
+
+const slider4 = () => {
+  if (!swiperContainer4) {
+      return ;
+  };
+
+  const swiper = new Swiper(swiperContainer4, {
+    direction: 'horizontal',
+    slidesPerView: 4,
     observer: true,
     spaceBetween: 15,
     loop: true,

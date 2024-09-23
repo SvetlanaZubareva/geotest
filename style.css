@@ -305,6 +305,7 @@
   .section--margin{
     margin: 0 auto;
     display: flex;
+    width: 80%;
   }
   .main--swiper{
     display: grid;
@@ -1294,6 +1295,345 @@ h1 .type6{
 .section-offer--service{
   padding-bottom: 290px;
 }
+.main-about-description_link1{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #909090;
+}
+.main-about-description_link--color1{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #404040;
+}
+.main-about-description_h1{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 60px;
+  color: #151515;
+  text-align: center;
+  margin-bottom: 47px;
+  text-transform: uppercase;
+}
+.main-about-description_p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #03233a;
+  text-align: center;
+}
+.main-about-description_block-p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #03233a;
+  text-align: start;
+  width: 81%;
+  margin-bottom: 45px;
+}
+.main-about-description_section-p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #03233a;
+  width: 82%;
+  margin: 0 auto;
+}
+.main-about-description_div-h2{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
+}
+.main-about-description_div-p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.main-about-description_div-list-item{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.main-about-description_div-paragraph{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 91px;
+  width: 492px;
+  text-align: center;
+  font-style: italic;
+}
+.section-trust_h2{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 60px;
+  color: #03233a;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+.section-trust_list-item{
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #03233a;
+  border-radius: 15px;
+}
+.section-team_h2{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 88px;
+  color: #03233a;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.section-team_list{
+  background-color: #f0f5ff;
+  padding: 30px;
+  /* width: 100%; */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-bottom: 30px;
+}
+.section-team_list-item{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #03233a;
+}
+.main-about-description_portfolio-h2{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  color: #03233a;
+}
+.main-about-description_portfolio-h3{
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #03233a;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.main-about-description_portfolio-h3--margin{
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 60px;
+  color: #03233a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+.main-about-description_portfolio-buttom{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  background-color: #338dce;
+  border-radius: 15px;
+  width: 402px;
+  height: 59px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 45px;
+  margin-bottom: 100px;
+}
+.main-about-description_sertificate-div{
+  display: grid;
+  grid-template-columns: 55% 45%;
+  margin-bottom: 90px;
+}
+.main-about-description_sertificate{
+  margin: 0 auto;
+  width: 80%;
+}
+.main-about-description_sertificate-h2{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 88px;
+  color: #03233a;
+  text-transform: uppercase;
+}
+.main-about-description_sertificate-p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #03233a;
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+.swiper-slide_p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #03233a;
+}
+.main-about-description_h2{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 60px;
+  color: #03233a;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+.main-about-description_p{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #03233a;
+}
 .main-about-description_link{
-  
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 371px;
+  height: 59px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  background-color: #338dce;
+}
+.main-about-description_section{
+  padding: 150px 0 200px;
+  margin: 0 auto;
+  width: 80%;
+}
+.main-about-description_section--background{
+  background-image: url("./img/png/фон\ на\ стр\ о\ компании\ \(2\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-about-description_link--color1{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #404040;
+}
+.main-about-description_list{
+  display: flex;
+  margin-bottom: 78px;
+}
+.main-about-description_section--img{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.main-about-description_div-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+.main-about-description_div{
+   background-color: #151515;
+   border-radius: 15px;
+   padding: 25px;
+   text-align: start;
+}
+.main-about-description_div:nth-child(1){
+  background-image: url("./img/png/image\ 23\ 1.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.main-about-description_div:nth-child(2){
+  background-image: url("./img/png/image\ 22.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.section-trust{
+  width: 80%;
+  margin: 0 auto;
+}
+.section-trust_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 14px;
+  text-align: center;
+  margin-bottom: 89px;
+}
+.section-trust_list-item{
+  background-color: #f0f5ff;
+  padding: 100px 50px 100px;
+}
+.section-team{
+  margin: 0 auto;
+  width: 80%;
+}
+.main-about-description_portfolio-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 31px;
+  width: 80%;
+  margin: 0 auto;
+}
+.section-team_img{
+  width: 100%;
+  height: 100%;
+}
+.main-about-description_block{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 45px 40px 45px;
+  background-color: #f0f5ff;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-bottom: 65px;
+}
+.main-about-description_block-svg{
+  position: absolute;
+  top: -10px;
+  left: 90%;
+}
+.main-about-description_link-span {
+  text-decoration: underline;
+  margin-left: 10px;
+}
+.swiper-slide_div-company{
+  height: 100%;
+  text-align: center;
+}
+.main-about-description_portfolio-img{
+  width: 100%;
 }
