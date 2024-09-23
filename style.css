@@ -29,6 +29,8 @@
   a{
    cursor: pointer;
    text-decoration: none;
+   transition: 1s;
+   border: 0;
   }
   p,
   h2,
@@ -42,6 +44,9 @@
   ul{
     margin: 0;
     padding: 0;
+  }
+  button{
+    transition: 1s;
   }
   .list-item_link{
     font-weight: 400;
@@ -593,6 +598,12 @@
   }
   .section-price{
     margin-top: 110px;
+    /* text-align: center; */
+  }
+  .section-price_p--margin{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
   }
   .section-price_h2{
     text-align: center;
@@ -859,6 +870,9 @@ h1 .type6{
   object-fit: cover;
   cursor: pointer;
 }
+.swiper-slide2:hover{
+  padding: 5px;
+}
 #swiper1{
   border-radius: 15px;
 } 
@@ -1014,6 +1028,7 @@ h1 .type6{
 }
 .swiper-slide_div--width{
   width: 100%;
+  height: 100%;
 }
 .swiper-slide_span{
   display: flex;
@@ -1051,6 +1066,9 @@ h1 .type6{
 .swiper-slide_div{
   height: 198px;
 }
+.swiper-slide_div1{
+  height: 100%;
+}
 .swiper-slide_div--width-color{
   color: #fff;
   background-color: #338dce;
@@ -1058,8 +1076,14 @@ h1 .type6{
 }
 /* анимация кубов */
 .container_list-item--animation:hover{
-  top: 20px;
+  top: 220px;
   cursor: pointer;
+ 
+}
+.container_list-item--animation1:hover{
+  top: 10px;
+  cursor: pointer;
+ 
 }
 .box {
   align-self: flex-end;
@@ -1142,4 +1166,134 @@ h1 .type6{
   0%   { transform: translateY(0); }
   50%  { transform: translateY(30px); }
   100% { transform: translateY(0); }
+}
+
+.main-service_section-link{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #909090;
+}
+.main-service_section-link--color{
+  color: #404040;
+}
+.main-service_h1{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  color: #151515;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.main-service_p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #404040;
+  margin-bottom: 64px;
+  width: 434px;
+}
+.main-service_button{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  background-color: #338dce;
+  width: 316px;
+  height: 59px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.main-service_span{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #338dce;
+}
+.section-service_list-task-h2{
+  font-family: "Nebulosa Black", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  color: #03233a;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.section-service_list-task-p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #404040;
+}
+.section-service-gallery{
+  margin-top: 45px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.section-service-gallery_h2{
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 60px;
+  color: #03233a;
+  margin-bottom: 30px;
+}
+.section-service-gallery_list-item--img{
+  border-radius: 15px;
+}
+.main-service_section{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: 35% 62%;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+.main-service_section-list{
+  display: flex;
+  margin-bottom: 56px;
+}
+.main-service_section-img--width{
+  width: 100%;
+  height: 506px;
+}
+.main-service_div-button{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-service_list{
+  width: 80%;
+  margin: 0 auto;
+}
+.section-service_list-task{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.section-service_list-item-task{
+  background-color: #f0f5ff;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.section-service_list-item-task:nth-child(3){
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.section-offer--service{
+  padding-bottom: 290px;
+}
+.main-about-description_link{
+  
 }
