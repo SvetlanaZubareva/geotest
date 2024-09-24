@@ -1,9 +1,12 @@
+import Swiper from '../vendor/package/swiper-bundle.min.mjs';
 // код для первого слайдера
 
 const swiperContainer = document.querySelector('.swiper');
 const swiperContainer2 = document.querySelector('.swiper2');
 const swiperContainer3 = document.querySelector('.swiper3');
 const swiperContainer4 = document.querySelector('.swiper4');
+const swiperContainer5 = document.querySelector('.swiper5');
+const swiperContainer6 = document.querySelector('.swiper6');
 
 document.addEventListener(
     'DOMContentLoaded',
@@ -12,9 +15,12 @@ document.addEventListener(
         slider2();
         slider3();
         slider4();
+        slider5();
+        slider6();
     },
     true
 )
+
 
 const slider = () => {
   if (!swiperContainer) {
@@ -33,6 +39,7 @@ const slider = () => {
     }
   });
 }
+
 
 // код для второго слайдера
 const slider2 = () => {
@@ -86,6 +93,42 @@ const slider4 = () => {
     navigation: {
       nextEl: '.swiper-button-next3',
       prevEl: '.swiper-button-prev3',
+    }
+  });
+}
+
+const slider5 = () => {
+  if (!swiperContainer5) {
+      return ;
+  };
+
+  const swiper = new Swiper(swiperContainer5, {
+    direction: 'horizontal',
+    slidesPerView: 4,
+    observer: true,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next5',
+      prevEl: '.swiper-button-prev5',
+    }
+  });
+}
+
+const slider6 = () => {
+  if (!swiperContainer6) {
+      return ;
+  };
+
+  const swiper = new Swiper(swiperContainer6, {
+    direction: 'horizontal',
+    slidesPerView: 4,
+    observer: true,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next6',
+      prevEl: '.swiper-button-prev6',
     }
   });
 }
