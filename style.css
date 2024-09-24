@@ -1409,7 +1409,6 @@ h1 .type6{
 .section-team_list{
   background-color: #f0f5ff;
   padding: 30px;
-  /* width: 100%; */
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-bottom: 30px;
@@ -1636,4 +1635,108 @@ h1 .type6{
 }
 .main-about-description_portfolio-img{
   width: 100%;
+}
+.section-contact_adress{
+  display: grid;
+  grid-template-columns: 30% 65%;
+  gap: 75px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 90px;
+}
+.section-contact_adress_div-h2{
+  text-transform: uppercase;
+  width: 496px;
+  margin-bottom: 30px;
+}
+.section-contact_adress_div-p{
+  width: 290px;
+}
+.section-contact-social_h2{
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.section-contact-social_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.section-contact-social_list-item{
+  background-color: #023458;
+  border-radius: 15px;
+  padding: 26px 30px 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-contact-social_list-item:nth-child(1){
+  padding: 11px 30px 11px;
+}
+.section-contact-social{
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.section-contact-social_list-item1-link{
+  color: #fff;
+}
+.section-contact-social_list-item-svg{
+  margin-right: 10px;
+}
+.section-contact_form{
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 60px;
+  background-color: #f0f5ff;
+  background-image: url("./img/png/Subtract.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45px;
+  display: grid;
+  grid-template-columns: 50% 45%;
+  gap: 59px;
+  border-radius: 15px;
+}
+.section-contact_form-div{
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  padding: 10px 30px 10px;
+  border: none;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.input::placeholder{
+  color: #b0c0e0;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.section-contact_form-button{
+  background-color: #338dce;
+  width: 325px;
+  height: 60px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.section-contact_form-h2{
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.section-contact_form-p{
+  width: 353px;
 }

@@ -63,8 +63,8 @@
         </section>
     </header>
     <main class="main-about-description">
-        <section class="main-contact">
-            <section class="main-about-description_section">
+        <section class="section-contact_adress">
+            <div class="section-contact_adress_div">
                 <ul class="main-about-description_list">
                     <li class="main-about-description_list-item">
                         <a class="main-about-description_link1" href="#">
@@ -73,13 +73,11 @@
                     </li>
                     <li class="main-about-description_list-item">
                         <a class="main-about-description_link1 main-about-description_link--color1" href="#">
-                            о компании
+                                    о компании
                         </a>
                     </li>
                 </ul>
-            </section>
-            <section class="section-contact_adress">
-                <div class="section-contact_adress_div">
+                <div>
                     <h2 class="section-contact_adress_div-h2">
                         адрес нашего офиса
                     </h2>
@@ -87,10 +85,10 @@
                         196105, Санкт-Петербург, пр. Юрия Гагарина, дом 2, литера А, пом. 15-Н, офис 21
                     </p>
                 </div>
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af80180d71eb29fb6a08ad0b8bbabb87955d203a5e5d172f3751abfa532a8773a&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+            </div>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af80180d71eb29fb6a08ad0b8bbabb87955d203a5e5d172f3751abfa532a8773a&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
     
-                </script>
-            </section>
+            </script>
         </section>
         <section class="section-contact-social">
             <h2 class="section-contact-social_h2">
@@ -98,7 +96,20 @@
             </h2>
             <ul class="section-contact-social_list">
                 <li class="section-contact-social_list-item">
-                    <img src="" alt="">
+                    <svg class="section-contact-social_list-item-svg" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0_396_83" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+                        <rect width="23" height="23" fill="url(#pattern0_396_83)"/>
+                        </mask>
+                        <g mask="url(#mask0_396_83)">
+                        <rect x="0.0185547" y="-0.0664062" width="23" height="23" fill="#338DCE"/>
+                        </g>
+                        <defs>
+                        <pattern id="pattern0_396_83" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_396_83" transform="scale(0.0078125)"/>
+                        </pattern>
+                        <image id="image0_396_83" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAEUjAABFIwG1lgOoAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAnlQTFRF////AwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEAwEEUwtpVwAAANJ0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBsdHh8gISIjJCUmJygpKissLS4vMDEyMzQ2Nzg5Ojs9P0FCQ0RFR0hJSktNT1BRUlNUVVhZWltcXV9gYmNkZWdoaWttbm9wcXJzdHZ3eXp7fH1+f4GDhIaIiYqLjI2Oj5CRkpOUlZaXmJqbnJ2eoKGjpaapqqytrq+wtLW2t7i5uru8vb6/wMLDxMbHysvMzc/Q0dLU1dbX2Nna29zd3t/h4uTl5ufo6eru8PHy8/T19vf4+fr7/P3+OYN0cwAABChJREFUGBnFwYlbVFUcBuBvZkBCSENZKjSjzNRCcMlEMs0syiXDMhfQzK20gkxJ0RJRCw1LTdMKMy20wtQsCQZCyAWhAWbm+4t6eqrHRO655wznd31fwFEgv7KxOXigYABuj5Gn+Y+GPNwORZ38T7TMD6/FV/H/qvzw1uAa3myvD17KPMveVsNDOS28Rc9j8ExBB/sQTIFH1kTZp8/gjQo6WQ4vrKejrmzIW0CF0wFIm9ZNlVch7JGrVLqeCVHpzXRxCKI+oas5EFRAd40JEJNyiRpWQkwZdVxOgZD0Dmopg5Ay6gkNh4j0Dmr6GCLeoK5oJiT8TG3rICCX+i5CwBYaGA3r/K008BKsG00T22HdyzRxFNbtpImvYN0ZmvgatiWHaaIatj1KI0tgWz6NPAzbZtPEcVi3mAaiObBuLQ3sgn1l1PflANj3EbXVJkHAh9R1IgUSNlDTvgSIWEk9m3yQUUgdkSJImUENrdMhJpfujqRDTibddK3wQVB8iGqR5yDrO6oVQ9hmKh2GtDlUmglp91Kl0Q9xv1PhA8jbT4VyyHuNCuWQNyxKZ+XwwLd0tgMeWEpnv8EDqT10lg0PHKazEnhgPp2dhweSOuhsFDywm862wAMPhOmoeyQ8UE1nn8MDY6J0NhMeOEhnv8RD3ngqrIIHjtLZ1QzIm0KFPfDAYSosgLysEJ39OQ7ySqnQOATiBjZR4Ygf4mZTpQTyaqgQnQVxo7qpcCUL4jZR5aeBkJZcT5VqiJvYQ5WNELeOSm9DWuAkldZA2rArVFoGPb67x83ISUYM5lEpuggaHnynmX9ren8SjO2lUqQQbgbt4Q0XZsPQoAYqhedALS/Im9ROgplJXVTqngWVFRH2En7dByMLqRZ6Ho78W9mHL9JgZBtdbAigb4kH2KeWPJiIO0YXNanoS2otHYTX+2FgaANdBMfjVmnn6exQMgyMaaeL0CvoLaWOKj/eAwMFUbrZdRduMugU1ZqzYeAturpaOhQ3ZNbSTfvT0Of7lO6ub8zAvxZfo7twIfQlnqSGzn0lCx7Pmlv5K7VEFkLf4DraF10CfRn1FLAM+u5roYBV0Df2MgW8AH2TO2jftSzoe6qb9n3vh755Edo3Fwbm99C6c34YeCZE6ybAxLTrtG0pjEy+Qsu2w0z2H7SrFIYeaqZVS2BqeD0tCt8PY0OP0Z4qxCCwmbZcG4GYvNhJK0JTEaOcIC0IFyBmad+w3zqfRT/EbWU/tU1A/zwZZH9cGIH+urOSsTs5BBY80cgYHbgDViRXRBmLHX7YMvUsjYXXwiL//Is0cyYXdsUtaqK+rjfjYV3C8jZqOjUGIpKKf6CGYFEAYsa+10q1s4VxEBU3a38XnbRV5PkgL3HK6oOX2FvX6W35AXhn+Lx3d+8/Xhds7249d+LgzuKJCVD7C5xlDdDQW2h5AAAAAElFTkSuQmCC"/>
+                        </defs>
+                    </svg>
                     <ul>
                        <li class="section-contact-social_list-item1">
                             <a class="section-contact-social_list-item1-link" href="tel:+7 (812) 209 33 99">
@@ -113,37 +124,59 @@
                     </ul>
                 </li>
                 <li class="section-contact-social_list-item">
-                    <img src="" alt="">
-                    <li class="section-contact-social_list-item1">
-                        <a class="section-contact-social_list-item1-link" href="mailto:geo.test.ing@yandex.ru">
-                            geo.test.ing@yandex.ru
-                        </a>
-                    </li> 
+                    <svg class="section-contact-social_list-item-svg" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0_396_76" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23">
+                        <rect width="23" height="23" fill="url(#pattern0_396_76)"/>
+                        </mask>
+                        <g mask="url(#mask0_396_76)">
+                        <rect width="23" height="23" fill="#338DCE"/>
+                        </g>
+                        <defs>
+                        <pattern id="pattern0_396_76" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_396_76" transform="scale(0.0078125)"/>
+                        </pattern>
+                        <image id="image0_396_76" width="128" height="128" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                    </svg>
+                    <a class="section-contact-social_list-item1-link" href="mailto:geo.test.ing@yandex.ru">
+                        geo.test.ing@yandex.ru
+                    </a>
                 </li>
                 <li class="section-contact-social_list-item">
-                    <img src="" alt="">
-                    <li class="section-contact-social_list-item1">
-                        <a class="section-contact-social_list-item1-link" href="#">
-                            telegram
-                        </a>
-                    </li> 
+                    <svg class="section-contact-social_list-item-svg" width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.65483 11.5792L0.460543 9.88005C0.460543 9.88005 -0.160232 9.62719 0.0396571 9.05382C0.0808056 8.93558 0.163812 8.83497 0.412122 8.66207C1.56304 7.85667 21.7146 0.584963 21.7146 0.584963C21.7146 0.584963 22.2836 0.392473 22.6192 0.520503C22.7022 0.546303 22.7769 0.593779 22.8357 0.658073C22.8944 0.722368 22.9351 0.801174 22.9535 0.886431C22.9898 1.03702 23.005 1.19194 22.9986 1.34673C22.997 1.48064 22.9808 1.60475 22.9686 1.79938C22.8459 3.78749 19.173 18.6254 19.173 18.6254C19.173 18.6254 18.9533 19.4937 18.1659 19.5234C17.9725 19.5297 17.7797 19.4968 17.5991 19.4267C17.4186 19.3566 17.254 19.2507 17.1151 19.1153C15.57 17.781 10.2299 14.178 9.04994 13.3856C9.02333 13.3674 9.00091 13.3437 8.9842 13.3161C8.9675 13.2884 8.95689 13.2575 8.9531 13.2254C8.93661 13.1419 9.02706 13.0384 9.02706 13.0384C9.02706 13.0384 18.3256 4.74051 18.573 3.8694C18.5921 3.80192 18.5198 3.76862 18.4226 3.79818C17.805 4.02628 7.09894 10.814 5.91733 11.5631C5.83228 11.589 5.74238 11.5945 5.65483 11.5792Z" fill="#338DCE"/>
+                    </svg>
+                    <a class="section-contact-social_list-item1-link" href="#">
+                        telegram
+                    </a>
                 </li>
-                <li class="section-contact-social_list-item">
-                    <img src="" alt="">
-                    <li class="section-contact-social_list-item1">
-                        <a class="section-contact-social_list-item1-link" href="#">
-                            whatsapp
-                        </a>
-                    </li> 
+                <li class="section-contact-social_list-item">     
+                    <svg class="section-contact-social_list-item-svg" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0_396_95" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="26" height="26">
+                        <rect width="26" height="26" fill="url(#pattern0_396_95)"/>
+                        </mask>
+                        <g mask="url(#mask0_396_95)">
+                        <rect width="26" height="26" fill="#338DCE"/>
+                        </g>
+                        <defs>
+                        <pattern id="pattern0_396_95" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_396_95" transform="scale(0.0078125)"/>
+                        </pattern>
+                        <image id="image0_396_95" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADdgAAA3YBfdWCzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAvVSURBVHic7Z1/0BVVGcc/D74KyM/8CYlgOgiJNuFohqBgTDkGgpSiKBVj2SSpZallpc1ko5Y1jT/7Q8soAbWE0VFLRxSTILXM8Tc4iqKkKIkCr4jC+/TH2etcX+7d3bt79uzZ+57PzBneq/c+++w+3z3n7NlzniOqSjsjIkOAUXVlJDAY6F9X+kXlfWBzXekENgFrgJV15UVV/cDpiRSEtJMARGQAMAGYCBwNjAEGFnCobcALwD+BpcBSVX2pgOMUTqUFICK9gEnAcZigHwrsVJI7azBiWALcrqrvlORHS1RSACLyaWA2MAv4eMnuNGIrcCcwH7hbVbeW7E9TKiMAEdkd+CYm8AeV7E4rvA38BbheVR8p25nueC8AERkGfB84A9NRqzJLgMtUdUnZjtTwVgAiciBwAfAVYJeS3bHNo8ClmL5CqQHwTgAisifwS+CrQK+S3SmaJ4GzVfXBshzw5gKLSC8RmQusAubgkW8FcgiwVERuisYrnONFDSAiRwDXYR7jeiobgYuBa1R1u6uDlioAEekNXAGcBUhpjvjF48AsVX3OxcFKE4CIjARuAcaW4oDfdALfVtV5RR+olHZWRE4F/k0IfjP6AX8QkXkiUuijr9MaQET6AlcDX3d20OqzEpipqk8UYdyZAERkN8zw6DgnB2wvNgMzVPU+24adNAEisi+wjBD8rPQH7hKRk20bLlwAIjIGWAF8suhjtTm7AAtE5CybRgsVgIhMAB4C9inyOD2IXsDVInKJLYOF9QGiwZ0lVP8Fjq/8XFUvymukEAGIyGhMm7+7deOBes5W1WvyGLAuABHZB1gODLdqONCILuBUVb0lqwGrAhCRj2Ha/DHWjAaSeB+YkvUR0ZoARGRn4H7MpMyAWzYD47MMFtl8CriUEPyy6A/cmmXY2IoAROSLmGlbgfIYhXml3hK5m4Co0/c4sEcuQwFbzGnlLWIuAYjITsADwFGZjQRs0wkclnY+Qd4m4AeE4PtGP2BhdHMmkrkGEJERwLNA30wGAkXzXVW9MulLeQSwCJiR6cd26CQMM8exERilqq/HfSlTEyAix1Je8H8P7Keq/YGhwC8AZ5MoK8RA4FeJ31LVlgrmteRKQB2XLuDMJj5Nw6zHc+1TFcrE2HhmEMB5PgU/iCCxPEHU1OcWANAHeN234AcRJJYTbAlgrq/BDyKILY/kFgDQAaz2OfhBBLFlcl4BzK5C8IMImpb7MgsAs2zrqaoEP4igaflMVgGMd+jkVTaCH0TQsFyfVQDXOXLwdWCQTQHUieB9DwJQdtkA9G5JAMDOwHpHDp5uO/h15/EzDwLgQ5lRf13SDAUfi7vZvfcXaPsKTP+ip3Na/Yc0Ajgt+StW2A68WpRxVd0EvFaU/QoxVUQG1T7ECiBazTu9cJcMa1V1W1HGoyyiQ4uyXyF6UxfTpBrgSNy97y86s+b59Iy8Q2mYXPsj6YIcU7Aj9RwgIoWkiRGRacAPi7BdUSbV/vBJALsC+9o2GgX/z5inmYBhuIjsBzECiOaYH+7IoRqjbRqrC367JZq0wSSIrwEm4P6uOdiWoRD8RCZBvADKyOZxgg0jIfip+CzEC+BAR47UMyFKDp2ZKNVsCH4yB4jIzr4JQICZeQyo6puY9OyBeDqA/eMEMNKVJ904xYKNCzDTxgPxjGooABHZm2L22knD4VFiqcyo6lrMauVAPI0FQDnVfz25c98AvwZetGCnnWkqAOsDMi1ykoVaYCtwriV/2pXhzQQwwKkbO9IL+GleI6p6B3BvfnfalgHNBODDmrsTRcTGwNB3gLbY5LEA+jUTQH+nbjRGMLN4cqFmnXzu2qRN6e+zAABmiMjxeY2o6mXAnyz40254LwCA66LJHHk5A/iHBTvtRFMB+PTqdBhweV4j0VPBDMzqpoBhl2YC2OjUjWTOFJHxeY1Ew8RT8e/8yqKzmQB82/hYgBuiTaZyoarPYN43hKQSMQJ426kb6RiN2VAyN6p6D+bxsKezuSo1QI1zRGSWDUOqei1mu7qeXBM0FYCPNUCNGywNENVEMIWe2yeoXA0AZvLoovrFDXmImoNx9Myng7erWAOAmaswz9Y08qhjeAR2xgm6gLVUYxna880EsMapG9mYDvzYlrHoEXEy2UcMPwAuAQar6jBgcPTZ5/cQK+NW075E+StZk0oXJjmy7ZXEF9LacvKtwLQK5ieYGHcRFnngYJqyDZhegAhGA/fkCX4FRDAkzumLPHAwbdlCQkLEHEKYBryQNfgei+AdVSXO4SkeONnSCQFjCxJBb+BHmK1ZWg6+pyJYniSAoR442WpZB4wsQgTRNdkHmJ8l+B6K4PJYAUTOvuaBo62Wl4sUQXRd9sz5ex9EcJxqcoqYfyX8fx8ZDiwTkbFFHUDNI2Oe398BnIR50iiD7ZiNPRMFcGfxvhTCXsBSEZlYtiPNKFkEj6lJmZMogMVUY0SrEQOBv4mIqxQ3LVMnAtcvpB6s/RErAFV9A7MTaFXpA9wmInPKdqQZkQiSN3awy1/rHUjqsJxN+R27vKUL+AkxefPLLMAQh9diLdCrduw0SZMWRz+sMoIZl19s6y2iTdTs6+NqMetCVf2wWU8UgKq+CjxcqEvumA48ams+gS2iHdhcLca5qf5D2rRptxXgSFmMBB62NbPIEhc7Os4zqvr4R/5L2oEP4F3Kb8ttlyvpljy5hPb/TIfne+EOx2/B0as9CFgR5VnM1utlBb/L0XluBnbPI4ARmMkNZQesiNIFXAsMaNPgK/Cbhn606PQfPQhWkeUV4Pg2DP5WYJgNAYxx7HhZZRFwcJsEX4EbmvqT4QRu9yBALkoXcCswpuLB3w4caFMA4zwIjusLeHNeIZQUfAVujPUrw4kc5UFQyiqPAN+jSXva5HoNAq4qKfgbSJi7kEUArjaQ8rl0AX+PxPAFzBwEqbtGHcB+wOm432q3vsxNiqdEDqdCRDows4T2SP2jnsO7mMmjgzBTx3Yq1x0eAw7XunH/RnS0aPTzhOA3Y1fgkLKdiKjd/YlzOVrdQuXUbP4EHHONqqZ6gZe6CYg2kHoDv/IHBXbkP8A4NSlxEmmlBjieEHzf2QScnDb40JoAfHp9GmjMt1T1+VZ+kKoJEJHBmMeZ3Dl6AoXxO1X9Rqs/SlsDfIkQfJ9ZgZm72TJpBRB6//7yLDBVVbdk+XFiEyAiQ4hmkmY5QKBQ1mJ6/K9kNZAmqCen/F7ALRuAY/MEH9IFNvT+/aMTszr56byGYpsAEdkfM74d8If/AVPSjvQlkfQuINz9frEGU+0/Z8tgUhMQev/+8DRwpM3gQ/zm0Z8CDrJ5sEBmlgFHqdkOzypxNUC4+8tHMSuHP6eqG4o4QMNOYJSBczVmLUCgHNYDX1PVu4s8SLNO4JGE4JfJQ8CsIqr87jRrAkLvvxy2YNLfHuMi+NCgCYjm/f0XsyA04I7FwLmq+rLLgzZqAiYTgu+SVcA5atLWO6dRE1BW73898FvgaEwf5A5ML7hdWQecDxxSVvABus/574PZPcPVvPVNmPTsxwEdDdYgjMEsSG2nVcmrgblAnzwrjWyV7hf8RAcX4D1MezcT6JtyMcoITH6CKiepeAqYTQOh+ySA2wo6+e3AfZiVMoMzO2v6JudhZsBUYZXyesxKqvF4mqHsw6eAKHvWOuxO/XoYWAjcoiYTljVEZBhmJ9AvY9Yr+jJnYQtmBfV84B5V9XnHkI8IYA5wowWbzwALMOnIXrRgLxER2QsjhqnAYZi8e674AHgUeCAqyzXj9KwyqBfAvZilX1l4GbOEeoGqPmHJt8yIyFDg0KiMjf4dYcH0RuB5zKPbKkxTtExVXeX4s46oKiKyN2Z+WSsLGt/EJFBYiFG9FuGgLURkN8wq3sGYBZzd/x2IuZs315VOzJPKK8AqVV3n3vNiqQ0EzSRd8DdhevALgCWquq0ox2yjqm8Bb5Xth2/UBBA39r8VuAtzp9+pqu8V7lXAGQJ8AujeWdsO3I+50xerqs87iQZy0AGcUvd5BeZOv7Ud27vAjgjmLn8SuFlVV5fsT8Ax/weOO9v4LIPlYgAAAABJRU5ErkJggg=="/>
+                        </defs>
+                    </svg>
+                    <a class="section-contact-social_list-item1-link" href="#">
+                         whatsapp
+                    </a>
                 </li>
             </ul>
         </section>
         <section class="section-contact_form">
             <div class="section-contact_form-div">
-                <input type="text" placeholder="Имя Фамилия*">
-                <input type="text" placeholder="электронная почта*">
-                <input type="text" placeholder="номер телефона*">
-                <input type="text" placeholder="комментарий">
+                <input class="section-contact_form-input input" type="text" placeholder="Имя Фамилия*">
+                <input class="section-contact_form-input input" type="text" placeholder="электронная почта*">
+                <input class="section-contact_form-input input" type="text" placeholder="номер телефона*">
+                <input class="section-contact_form-input--hight input" type="text" placeholder="комментарий">
                 <button class="section-contact_form-button button">
                     отправить
                 </button>
