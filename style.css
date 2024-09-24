@@ -1794,7 +1794,7 @@ h1 .type6{
 .main-license_section--width{
   width: 95%;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 120px;
   background-color: #f0f5ff;
   border-radius: 15px;
 }
@@ -1804,17 +1804,51 @@ h1 .type6{
 .main-license_list-item-h2{
   text-transform: uppercase;
   margin-bottom: 30px;
+  width: 730px;
 }
 .main-license_list{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  justify-content: space-between;
 }
 .main-license_list-item:nth-child(1){
   background-color: #f0f5ff;
-  
+
+}
+.main-license_list-item:nth-child(2){
+  width: 45%;
+
 }
 .main-license_list-item{
   background-color: #fff;
   border-radius: 15px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+.main-license_list-item-h3{
+  color: #151515;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.main-license_list-item-h3--position{
+  position: absolute;
+  width: 90%;
+  display: flex;
+  left: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.main-license_list-item-p{
+  width: 550px;
+}
+.main-license_list-item:nth-child(3){
+  padding-left: 12%;
+}
+.main-license_list-item:nth-child(4){
+  padding-left: 12%;
+}
+.main-license_list-item:nth-child(5){
+  padding-left: 12%;
 }
