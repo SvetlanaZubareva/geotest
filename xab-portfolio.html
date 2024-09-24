@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прайс</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <section class="section--margin">
+            <a class="logo link-logo" href="#">
+                <svg width="262" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M233.998.27H262v1.806c0 1.204-.602 1.806-1.807 1.806h-9.936v23.486h-4.516V3.882h-9.936c-1.205 0-1.807-.602-1.807-1.806V.269ZM230.11 23.755c1.205 0 1.807.602 1.807 1.806v1.807h-16.259c-6.323 0-9.485-3.161-9.485-9.484v-8.13c0-6.323 3.162-9.485 9.485-9.485h15.807v1.807c0 1.204-.602 1.806-1.806 1.806h-13.098c-3.914 0-5.872 1.958-5.872 5.872v8.13c0 3.914 1.958 5.87 5.872 5.87h13.549ZM200.237 23.755c1.204 0 1.806.602 1.806 1.806v1.807H176.3V.27h25.292v1.807c0 1.204-.602 1.806-1.807 1.806h-18.969v8.13h19.421v3.613h-19.421v8.13h19.421ZM144.904.27h28.002v1.806c0 1.204-.603 1.806-1.807 1.806h-9.936v23.486h-4.517V3.882h-9.936c-1.204 0-1.806-.602-1.806-1.806V.269ZM132.399.27c6.323 0 9.484 3.16 9.484 9.484v8.13c0 6.323-3.161 9.484-9.484 9.484h-9.033c-6.323 0-9.485-3.161-9.485-9.484v-8.13c0-6.323 3.162-9.485 9.485-9.485h9.033Zm4.968 17.614v-8.13c0-3.914-1.958-5.872-5.872-5.872h-7.226c-3.914 0-5.872 1.958-5.872 5.872v8.13c0 3.914 1.958 5.87 5.872 5.87h7.226c3.914 0 5.872-1.956 5.872-5.87ZM107.945 23.755c1.205 0 1.807.602 1.807 1.806v1.807H84.008V.27H109.3v1.807c0 1.204-.602 1.806-1.807 1.806H88.524v8.13h19.421v3.613h-19.42v8.13h19.42ZM56.221.27h24.39v1.806c0 1.204-.603 1.806-1.808 1.806H60.739v21.68c0 1.204-.602 1.806-1.807 1.806h-2.71V.27ZM177.273 36.759h9.751v.722c0 .482-.241.723-.722.723h-7.223v8.667c0 .481-.241.722-.722.722h-1.084V36.76ZM174.077 36.759h1.084v10.834h-1.084c-.481 0-.722-.24-.722-.722v-3.973h-7.223v3.973c0 .481-.241.722-.722.722h-1.083V36.76h1.083c.481 0 .722.24.722.722v3.973h7.223V37.48c0-.481.241-.722.722-.722ZM160.409 36.759h1.806v10.834h-1.083c-.482 0-.723-.24-.723-.722v-7.87l-7.223 8.592h-1.805V36.76h1.083c.482 0 .722.24.722.722v7.87l7.223-8.592ZM146.734 36.759c2.047 0 3.07 1.023 3.07 3.07 0 2.046-1.023 3.07-3.07 3.07h-5.598v3.972c0 .481-.24.722-.722.722h-1.083V36.76h7.403Zm-.361 4.695c1.083 0 1.625-.542 1.625-1.625 0-1.084-.542-1.625-1.625-1.625h-5.237v3.25h5.237ZM135.413 36.759h1.806v10.834h-1.084c-.481 0-.722-.24-.722-.722v-7.87l-7.223 8.592h-1.805V36.76h1.083c.482 0 .722.24.722.722v7.87l7.223-8.592ZM123.189 36.759h1.083v10.834h-1.083c-.481 0-.722-.24-.722-.722v-3.973h-7.223v3.973c0 .481-.241.722-.722.722h-1.084V36.76h1.084c.481 0 .722.24.722.722v3.973h7.223V37.48c0-.481.241-.722.722-.722ZM109.52 36.759h1.806v10.834h-1.083c-.482 0-.723-.24-.723-.722v-7.87l-7.222 8.592h-1.806V36.76h1.083c.482 0 .723.24.723.722v7.87l7.222-8.592ZM98.917 36.759l-4.545 5.417 4.545 5.417h-1.4c-.481 0-.918-.24-1.324-.722l-3.325-3.973h-1.716v4.695H90.07c-.482 0-.723-.24-.723-.722v-3.973h-1.715l-3.326 3.973c-.406.481-.842.722-1.324.722h-1.4l4.545-5.417-4.544-5.417h1.4c.48 0 .917.24 1.323.722l3.326 3.973h1.715v-4.695h1.084c.481 0 .722.24.722.722v3.973h1.716l3.325-3.973c.406-.481.843-.722 1.324-.722h1.4ZM78.913 36.759h1.084v10.834h-1.084c-.481 0-.722-.24-.722-.722v-3.973h-7.223v3.973c0 .481-.24.722-.722.722h-1.083V36.76h1.083c.482 0 .722.24.722.722v3.973h7.223V37.48c0-.481.24-.722.722-.722ZM65.245 36.759h1.806v10.834h-1.084c-.481 0-.722-.24-.722-.722v-7.87l-7.223 8.592h-1.806V36.76H57.3c.481 0 .722.24.722.722v7.87l7.223-8.592Z" fill="#151515"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h47.944v47.944H0V0Zm6.164 3.425H44.52V44.52H23.972V15.067H41.78V6.165H6.164v8.904h14.384v3.768H3.424V3.425h2.74ZM41.78 19.178H28.082v8.22h9.931v4.109h-9.931v8.904H41.78V19.178ZM23.972 41.78H7.534V18.836h-4.11V44.52h20.548v-2.74Z" fill="#338DCE"/>
+                </svg>
+            </a>
+            <nav class="nav">
+                <ul class="nav_list list">
+                    <li class="list-item">
+                        <a class="list-item_link" href="index.html">
+                            главная
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="service.html">
+                            услуги
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="company.html">
+                            о компании
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            партнеры
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            контакты
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            цены
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            проекты
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link list-item_link--color" href="#">
+                            свяжитесь с нами
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="xab-portfolio-main">
+        <section class="xab-portfolio-main--width">
+            <ul class="main-about-description_list">
+                <li class="main-about-description_list-item">
+                    <a class="main-about-description_link1" href="#">
+                        главная/
+                    </a>
+                </li>
+                <li class="main-about-description_list-item">
+                    <a class="main-about-description_link1 main-about-description_link--color1" href="#">
+                        о компании
+                    </a>
+                </li>
+            </ul>
+            <h2 class="xab-portfolio-main_h2">
+                портфолио
+            </h2>
+            <p class="xab-portfolio-main_p">
+                Описание описание описание описание описание описание описание описание описание описание описание описание описание 
+            </p>
+            <ul class="xab-portfolio-main_list">
+                <li class="xab-portfolio-main_list-item">
+                    <ul class="xab-portfolio-main_list--img">
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/2.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/2.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/3.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/4.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/5.jpg" alt="" width="90px" height="60px">
+                        </li>
+                    </ul>
+                    <div class="xab-portfolio-main_div">
+                        <h3 class="xab-portfolio-main_h3">
+                            Испытания свай выдергивающей нагрузкой
+                        </h3>
+                        <p class="xab-portfolio-main_paragraph">
+                            Санкт-Петербург, пр-кт Обуховской обороны 51
+                        </p>
+                        <a class="xab-portfolio-main_link" href="#">
+                            подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="xab-portfolio-main_list-item">
+                    <ul class="xab-portfolio-main_list--img">
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/8.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/7.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/8.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/6.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/7.jpg" alt="" width="90px" height="60px">
+                        </li>
+                    </ul>
+                    <div class="xab-portfolio-main_div">
+                        <h3 class="xab-portfolio-main_h3">
+                            Испытания свай выдергивающей нагрузкой
+                        </h3>
+                        <p class="xab-portfolio-main_paragraph">
+                            Санкт-Петербург, пр-кт Обуховской обороны 51
+                        </p>
+                        <a class="xab-portfolio-main_link" href="#">
+                            подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="xab-portfolio-main_list-item">
+                    <ul class="xab-portfolio-main_list--img">
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/2.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/2.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/3.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/4.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/5.jpg" alt="" width="90px" height="60px">
+                        </li>
+                    </ul>
+                    <div class="xab-portfolio-main_div">
+                        <h3 class="xab-portfolio-main_h3">
+                            Испытания свай выдергивающей нагрузкой
+                        </h3>
+                        <p class="xab-portfolio-main_paragraph">
+                            Санкт-Петербург, пр-кт Обуховской обороны 51
+                        </p>
+                        <a class="xab-portfolio-main_link" href="#">
+                            подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="xab-portfolio-main_list-item">
+                    <ul class="xab-portfolio-main_list--img">
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/8.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/7.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/8.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/6.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/7.jpg" alt="" width="90px" height="60px">
+                        </li>
+                    </ul>
+                    <div class="xab-portfolio-main_div">
+                        <h3 class="xab-portfolio-main_h3">
+                            Испытания свай выдергивающей нагрузкой
+                        </h3>
+                        <p class="xab-portfolio-main_paragraph">
+                            Санкт-Петербург, пр-кт Обуховской обороны 51
+                        </p>
+                        <a class="xab-portfolio-main_link" href="#">
+                            подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="xab-portfolio-main_list-item">
+                    <ul class="xab-portfolio-main_list--img">
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/2.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/2.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/3.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/4.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/5.jpg" alt="" width="90px" height="60px">
+                        </li>
+                    </ul>
+                    <div class="xab-portfolio-main_div">
+                        <h3 class="xab-portfolio-main_h3">
+                            Испытания свай выдергивающей нагрузкой
+                        </h3>
+                        <p class="xab-portfolio-main_paragraph">
+                            Санкт-Петербург, пр-кт Обуховской обороны 51
+                        </p>
+                        <a class="xab-portfolio-main_link" href="#">
+                            подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="xab-portfolio-main_list-item">
+                    <ul class="xab-portfolio-main_list--img">
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/8.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/7.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/8.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/6.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/7.jpg" alt="" width="90px" height="60px">
+                        </li>
+                    </ul>
+                    <div class="xab-portfolio-main_div">
+                        <h3 class="xab-portfolio-main_h3">
+                            Испытания свай выдергивающей нагрузкой
+                        </h3>
+                        <p class="xab-portfolio-main_paragraph">
+                            Санкт-Петербург, пр-кт Обуховской обороны 51
+                        </p>
+                        <a class="xab-portfolio-main_link" href="#">
+                            подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="xab-portfolio-main_list-item">
+                    <ul class="xab-portfolio-main_list--img">
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/2.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/2.jpg" alt="" width="90px" height="60px" >
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/3.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/4.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/5.jpg" alt="" width="90px" height="60px">
+                        </li>
+                    </ul>
+                    <div class="xab-portfolio-main_div">
+                        <h3 class="xab-portfolio-main_h3">
+                            Испытания свай выдергивающей нагрузкой
+                        </h3>
+                        <p class="xab-portfolio-main_paragraph">
+                            Санкт-Петербург, пр-кт Обуховской обороны 51
+                        </p>
+                        <a class="xab-portfolio-main_link" href="#">
+                            подробнее
+                        </a>
+                    </div>
+                </li>
+                <li class="xab-portfolio-main_list-item">
+                    <ul class="xab-portfolio-main_list--img">
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/8.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/7.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/8.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/6.jpg" alt="" width="90px" height="60px">
+                        </li>
+                        <li class="xab-portfolio-main_list-item--img">
+                            <img class="xab-portfolio-main_img" src="./img/jpg/7.jpg" alt="" width="90px" height="60px">
+                        </li>
+                    </ul>
+                    <div class="xab-portfolio-main_div">
+                        <h3 class="xab-portfolio-main_h3">
+                            Испытания свай выдергивающей нагрузкой
+                        </h3>
+                        <p class="xab-portfolio-main_paragraph">
+                            Санкт-Петербург, пр-кт Обуховской обороны 51
+                        </p>
+                        <a class="xab-portfolio-main_link" href="#">
+                            подробнее
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <button class="xab-portfolio-main_button button">
+                Посмотреть еще
+            </button>
+        </section>
+        <section class="section--gradient">
+            <section class="section-offer">
+                <div class="container--animation">
+                    <div class="stage container_list-item--animation">
+                        <div class="box bounce-1">
+                            <img class="conttainer_img--animation" src="./img/png/блок 3 2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="stage stage1 container_list-item--animation">
+                        <div class="box bounce-2">
+                            <img class="conttainer_img--animation" src="./img/png/блок 1 2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="stage stage2 container_list-item--animation">
+                        <div class="box bounce-3">
+                            <img class="conttainer_img--animation" src="./img/png/блок 2 2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="stage stage3 container_list-item--animation">
+                        <div class="box bounce-4">
+                            <img class="conttainer_img--animation" src="./img/png/блок 1 1.png" alt="">
+                        </div>
+                    </div> 
+                    <div class="stage stage4 container_list-item--animation">
+                        <div class="box bounce-5">
+                            <img class="conttainer_img--animation" src="./img/png/блок 3 1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <h2 class="section-offer_h2">
+                    Заказчик требует <br> протоколы испытаний?
+                </h2>
+                <p class="section-offer_p">
+                    Оставьте заявку и получите выгодное предложение в течение 15 минут
+                </p>
+                <div class="button--center">
+                    <button class="section-offer_button button">
+                        Получить предложение
+                    </button>
+                </div>
+            </section>
+            <section class="section-footer--margin">
+                <section class="section-footer--flex">
+                    <section class="section-footer">
+                        <h2 class="section-footer_h2">
+                            Свяжитесь <br> с нами
+                        </h2>
+                        <ul class="section-footer_list">
+                            <li class="section-footer_list-item">
+                                <svg class="section-footer_svg" width="23" height="23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <mask id="b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="23" height="23"><path fill="url(#a)" d="M0 0h23v23H0z"/></mask><g mask="url(#b)"><path fill="#338DCE" d="M.019-.066h23v23h-23z"/></g><defs><pattern id="a" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#c" transform="scale(.00781)"/></pattern><image id="c" width="128" height="128" xlink:href="data:image/png;base64,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"/></defs>
+                                </svg>
+                                <a class="section-footer_link" href="#">
+                                    +7 (812) 209 33 99
+                                </a>
+                            </li>
+                            <li class="section-footer_list-item">
+                                <a class="section-footer_link" href="#">
+                                    +7 (921) 388 65 10
+                                </a>
+                            </li>
+                            <li class="section-footer_list-item">
+                                <svg class="section-footer_svg" width="23" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.655 11.658.46 9.874S-.16 9.608.04 9.006c.04-.124.124-.23.372-.411C1.563 7.749 21.715.114 21.715.114s.569-.202.904-.068a.489.489 0 0 1 .217.145c.058.067.1.15.117.24.037.157.052.32.046.483-.002.14-.018.27-.03.475-.123 2.087-3.796 17.667-3.796 17.667s-.22.912-1.007.943a1.376 1.376 0 0 1-.567-.101 1.435 1.435 0 0 1-.484-.327c-1.545-1.401-6.885-5.184-8.065-6.017a.247.247 0 0 1-.097-.168c-.016-.087.074-.196.074-.196s9.299-8.713 9.546-9.628c.02-.07-.053-.105-.15-.074-.618.24-11.324 7.366-12.506 8.153a.541.541 0 0 1-.262.017Z" fill="#338DCE"/>
+                                </svg>
+                                <a class="section-footer_link" href="#">
+                                    @telegramname 
+                                </a>
+                            </li>
+                            <li class="section-footer_list-item">
+                                <img class="section-footer_svg" src="./img/svg/Group 113 (1).svg" alt="">
+                                <a class="section-footer_link" href="#">
+                                    geo.test.ing@yandex.ru 
+                                </a>
+                            </li>
+                            <li class="section-footer_list-item">
+                                <div class="adress--flex">
+                                    <img class="section-footer_svg" src="./img/svg/Mask group (1).svg" alt="">
+                                    <p class="section-footer_link" href="#">
+                                        196105, Санкт-Петербург, пр. Юрия Гагарина,  
+                                    </p>
+                                </div>
+                                <p class="section-footer_link section-footer_link--margin" href="#">
+                                    дом 2, литера А, пом. 15-Н, офис 21
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="section-footer">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af80180d71eb29fb6a08ad0b8bbabb87955d203a5e5d172f3751abfa532a8773a&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+        
+                        </script>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="section-footer-contact">
+        <ul class="contact-list">
+            <li class="contact-list-item">
+                <a class="contact-list-item_a" href="#">
+                    услуги
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a class="contact-list-item_a" href="#">
+                    контакты
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a class="contact-list-item_a" href="#">
+                    партнеры
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a class="contact-list-item_a" href="#">
+                    о компании
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a class="contact-list-item_a" href="#">
+                    цены
+                </a>
+            </li>
+        </ul>
+        <div class="footer-logo">
+            <svg width="376" height="69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M335.814.387H376V2.98c0 1.728-.864 2.592-2.593 2.592h-14.259v33.705h-6.482V5.572h-14.26c-1.728 0-2.592-.864-2.592-2.592V.387ZM330.235 34.092c1.728 0 2.592.864 2.592 2.592v2.593h-23.334c-9.074 0-13.611-4.537-13.611-13.612V13.998c0-9.074 4.537-13.611 13.611-13.611h22.686V2.98c0 1.728-.864 2.592-2.593 2.592H310.79c-5.618 0-8.427 2.809-8.427 8.426v11.667c0 5.618 2.809 8.427 8.427 8.427h19.445ZM287.363 34.092c1.728 0 2.593.864 2.593 2.592v2.593H253.01V.387h36.297V2.98c0 1.728-.864 2.592-2.592 2.592h-27.223V17.24h27.871v5.186h-27.871v11.667h27.871ZM207.953.387h40.186V2.98c0 1.728-.864 2.592-2.592 2.592h-14.26v33.705h-6.481V5.572h-14.26c-1.729 0-2.593-.864-2.593-2.592V.387ZM190.007.387c9.074 0 13.611 4.537 13.611 13.611v11.667c0 9.075-4.537 13.612-13.611 13.612h-12.963c-9.075 0-13.612-4.537-13.612-13.612V13.998c0-9.074 4.537-13.611 13.612-13.611h12.963Zm7.13 25.278V13.998c0-5.617-2.809-8.426-8.426-8.426H178.34c-5.617 0-8.426 2.809-8.426 8.426v11.667c0 5.618 2.809 8.427 8.426 8.427h10.371c5.617 0 8.426-2.81 8.426-8.427ZM154.914 34.092c1.728 0 2.592.864 2.592 2.592v2.593h-36.945V.387h36.297V2.98c0 1.728-.864 2.592-2.593 2.592h-27.223V17.24h27.872v5.186h-27.872v11.667h27.872ZM80.684.387h35.001v2.592c0 1.729-.865 2.593-2.593 2.593H87.165v31.112c0 1.729-.864 2.593-2.592 2.593h-3.89V.387ZM254.407 52.753h13.994v1.037c0 .691-.346 1.037-1.037 1.037h-10.365v12.438c0 .691-.346 1.037-1.037 1.037h-1.555V52.753ZM249.821 52.753h1.555v15.549h-1.555c-.691 0-1.037-.346-1.037-1.037v-5.7h-10.365v5.7c0 .691-.346 1.037-1.037 1.037h-1.555V52.753h1.555c.691 0 1.037.346 1.037 1.037v5.701h10.365V53.79c0-.691.346-1.037 1.037-1.037ZM230.206 52.753h2.591v15.549h-1.555c-.691 0-1.036-.346-1.036-1.037V55.971l-10.366 12.33h-2.591V52.754h1.555c.691 0 1.036.346 1.036 1.037v11.294l10.366-12.33ZM210.58 52.753c2.937 0 4.406 1.469 4.406 4.406 0 2.937-1.469 4.405-4.406 4.405h-8.033v5.701c0 .691-.346 1.037-1.037 1.037h-1.554V52.753h10.624Zm-.518 6.738c1.555 0 2.332-.777 2.332-2.332 0-1.555-.777-2.332-2.332-2.332h-7.515v4.664h7.515ZM194.334 52.753h2.591v15.549h-1.555c-.691 0-1.036-.346-1.036-1.037V55.971l-10.366 12.33h-2.591V52.754h1.554c.692 0 1.037.346 1.037 1.037v11.294l10.366-12.33ZM176.791 52.753h1.554v15.549h-1.554c-.692 0-1.037-.346-1.037-1.037v-5.7h-10.366v5.7c0 .691-.345 1.037-1.036 1.037h-1.555V52.753h1.555c.691 0 1.036.346 1.036 1.037v5.701h10.366V53.79c0-.691.345-1.037 1.037-1.037ZM157.174 52.753h2.592v15.549h-1.555c-.691 0-1.037-.346-1.037-1.037V55.971l-10.365 12.33h-2.592V52.754h1.555c.691 0 1.037.346 1.037 1.037v11.294l10.365-12.33ZM141.957 52.753l-6.522 7.775 6.522 7.774h-2.009c-.691 0-1.317-.346-1.9-1.037l-4.772-5.7h-2.462v6.737h-1.555c-.691 0-1.037-.346-1.037-1.037v-5.7h-2.461l-4.773 5.7c-.583.691-1.209 1.037-1.9 1.037h-2.009l6.522-7.775-6.522-7.774h2.009c.691 0 1.317.346 1.9 1.037l4.773 5.701h2.461v-6.738h1.555c.691 0 1.037.346 1.037 1.037v5.701h2.462l4.772-5.701c.583-.691 1.209-1.037 1.9-1.037h2.009ZM113.25 52.753h1.555v15.549h-1.555c-.691 0-1.037-.346-1.037-1.037v-5.7h-10.365v5.7c0 .691-.346 1.037-1.037 1.037h-1.555V52.753h1.555c.691 0 1.037.346 1.037 1.037v5.701h10.365V53.79c0-.691.346-1.037 1.037-1.037ZM93.634 52.753h2.591v15.549h-1.554c-.691 0-1.037-.346-1.037-1.037V55.971L83.269 68.3h-2.592V52.754h1.555c.69 0 1.037.346 1.037 1.037v11.294l10.365-12.33Z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h68.806v68.806H0V0Zm8.846 4.915h55.045v58.976H34.403V21.625h25.556V8.847H8.846v12.778h20.642v5.406H10.813V59.96h23.59v3.932H4.915V4.915h3.931ZM59.96 27.523H40.301v11.795h14.252v5.898H40.301v12.778h19.658V27.523Z" fill="#fff"/>
+            </svg>
+        </div>
+        </section>
+        <div class="stage">
+        <div class="box bounce-1"></div>
+        </div>
+        <script type="module" src="./script.js"></script>
+    </footer>
+</body>
+</html>
