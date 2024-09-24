@@ -1740,3 +1740,54 @@ h1 .type6{
 .section-contact_form-p{
   width: 353px;
 }
+.main-price{
+  margin-top: 150px;
+}
+.main-price_div{
+  margin: 0 auto;
+  width: 80%;
+}
+.section-price{
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-price_p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #03233a;
+  width: 550px;
+  text-align: end;
+}
+.price-list{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.price-list-item{
+  margin-right: 10px;
+}
+.price-list-item button{
+  background-color: #f0f5ff;
+  color: #03233a;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 10px 15px 10px;
+  background-color: #f0f5ff;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.price-list-item:nth-child(1) button{
+  background-color: #338DCE;
+  color: #fff;
+  padding: 10px 15px 10px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
