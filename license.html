@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прайс</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./font/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <section class="section--margin">
+            <a class="logo link-logo" href="#">
+                <svg width="262" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M233.998.27H262v1.806c0 1.204-.602 1.806-1.807 1.806h-9.936v23.486h-4.516V3.882h-9.936c-1.205 0-1.807-.602-1.807-1.806V.269ZM230.11 23.755c1.205 0 1.807.602 1.807 1.806v1.807h-16.259c-6.323 0-9.485-3.161-9.485-9.484v-8.13c0-6.323 3.162-9.485 9.485-9.485h15.807v1.807c0 1.204-.602 1.806-1.806 1.806h-13.098c-3.914 0-5.872 1.958-5.872 5.872v8.13c0 3.914 1.958 5.87 5.872 5.87h13.549ZM200.237 23.755c1.204 0 1.806.602 1.806 1.806v1.807H176.3V.27h25.292v1.807c0 1.204-.602 1.806-1.807 1.806h-18.969v8.13h19.421v3.613h-19.421v8.13h19.421ZM144.904.27h28.002v1.806c0 1.204-.603 1.806-1.807 1.806h-9.936v23.486h-4.517V3.882h-9.936c-1.204 0-1.806-.602-1.806-1.806V.269ZM132.399.27c6.323 0 9.484 3.16 9.484 9.484v8.13c0 6.323-3.161 9.484-9.484 9.484h-9.033c-6.323 0-9.485-3.161-9.485-9.484v-8.13c0-6.323 3.162-9.485 9.485-9.485h9.033Zm4.968 17.614v-8.13c0-3.914-1.958-5.872-5.872-5.872h-7.226c-3.914 0-5.872 1.958-5.872 5.872v8.13c0 3.914 1.958 5.87 5.872 5.87h7.226c3.914 0 5.872-1.956 5.872-5.87ZM107.945 23.755c1.205 0 1.807.602 1.807 1.806v1.807H84.008V.27H109.3v1.807c0 1.204-.602 1.806-1.807 1.806H88.524v8.13h19.421v3.613h-19.42v8.13h19.42ZM56.221.27h24.39v1.806c0 1.204-.603 1.806-1.808 1.806H60.739v21.68c0 1.204-.602 1.806-1.807 1.806h-2.71V.27ZM177.273 36.759h9.751v.722c0 .482-.241.723-.722.723h-7.223v8.667c0 .481-.241.722-.722.722h-1.084V36.76ZM174.077 36.759h1.084v10.834h-1.084c-.481 0-.722-.24-.722-.722v-3.973h-7.223v3.973c0 .481-.241.722-.722.722h-1.083V36.76h1.083c.481 0 .722.24.722.722v3.973h7.223V37.48c0-.481.241-.722.722-.722ZM160.409 36.759h1.806v10.834h-1.083c-.482 0-.723-.24-.723-.722v-7.87l-7.223 8.592h-1.805V36.76h1.083c.482 0 .722.24.722.722v7.87l7.223-8.592ZM146.734 36.759c2.047 0 3.07 1.023 3.07 3.07 0 2.046-1.023 3.07-3.07 3.07h-5.598v3.972c0 .481-.24.722-.722.722h-1.083V36.76h7.403Zm-.361 4.695c1.083 0 1.625-.542 1.625-1.625 0-1.084-.542-1.625-1.625-1.625h-5.237v3.25h5.237ZM135.413 36.759h1.806v10.834h-1.084c-.481 0-.722-.24-.722-.722v-7.87l-7.223 8.592h-1.805V36.76h1.083c.482 0 .722.24.722.722v7.87l7.223-8.592ZM123.189 36.759h1.083v10.834h-1.083c-.481 0-.722-.24-.722-.722v-3.973h-7.223v3.973c0 .481-.241.722-.722.722h-1.084V36.76h1.084c.481 0 .722.24.722.722v3.973h7.223V37.48c0-.481.241-.722.722-.722ZM109.52 36.759h1.806v10.834h-1.083c-.482 0-.723-.24-.723-.722v-7.87l-7.222 8.592h-1.806V36.76h1.083c.482 0 .723.24.723.722v7.87l7.222-8.592ZM98.917 36.759l-4.545 5.417 4.545 5.417h-1.4c-.481 0-.918-.24-1.324-.722l-3.325-3.973h-1.716v4.695H90.07c-.482 0-.723-.24-.723-.722v-3.973h-1.715l-3.326 3.973c-.406.481-.842.722-1.324.722h-1.4l4.545-5.417-4.544-5.417h1.4c.48 0 .917.24 1.323.722l3.326 3.973h1.715v-4.695h1.084c.481 0 .722.24.722.722v3.973h1.716l3.325-3.973c.406-.481.843-.722 1.324-.722h1.4ZM78.913 36.759h1.084v10.834h-1.084c-.481 0-.722-.24-.722-.722v-3.973h-7.223v3.973c0 .481-.24.722-.722.722h-1.083V36.76h1.083c.482 0 .722.24.722.722v3.973h7.223V37.48c0-.481.24-.722.722-.722ZM65.245 36.759h1.806v10.834h-1.084c-.481 0-.722-.24-.722-.722v-7.87l-7.223 8.592h-1.806V36.76H57.3c.481 0 .722.24.722.722v7.87l7.223-8.592Z" fill="#151515"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h47.944v47.944H0V0Zm6.164 3.425H44.52V44.52H23.972V15.067H41.78V6.165H6.164v8.904h14.384v3.768H3.424V3.425h2.74ZM41.78 19.178H28.082v8.22h9.931v4.109h-9.931v8.904H41.78V19.178ZM23.972 41.78H7.534V18.836h-4.11V44.52h20.548v-2.74Z" fill="#338DCE"/>
+                </svg>
+            </a>
+            <nav class="nav">
+                <ul class="nav_list list">
+                    <li class="list-item">
+                        <a class="list-item_link" href="index.html">
+                            главная
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="service.html">
+                            услуги
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="company.html">
+                            о компании
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            партнеры
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            контакты
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            цены
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link" href="#">
+                            проекты
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-item_link list-item_link--color" href="#">
+                            свяжитесь с нами
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main class="main-license">
+        <section class="main-license_section--width">
+            <div class="main-license_div">
+                <ul class="main-about-description_list">
+                    <li class="main-about-description_list-item">
+                        <a class="main-about-description_link1" href="#">
+                            главная/
+                        </a>
+                    </li>
+                    <li class="main-about-description_list-item">
+                        <a class="main-about-description_link1 main-about-description_link--color1" href="#">
+                            о компании
+                        </a>
+                    </li>
+                </ul>
+                <ul class="main-license_list">
+                    <li class="main-license_list-item">
+                        <h2 class="main-license_list-item-h2">
+                            работать с нами — надежно
+                        </h2>
+                        <p class="main-license_list-item-p">
+                            Мы верим, что лучшее доказательство квалификации специалиста - его опыт, который подтверждает официальная документация. 
+Выберите необходимую для вас категорию документов
+                        </p>
+                    </li>
+                    <li class="main-license_list-item">
+                        <a href="#">
+                            <img class="main-license_list-item-img" src="" alt="">
+                            <h3 class="main-license_list-item-h3">
+                                Аттестаты аккредитации
+                            </h3>
+                        </a>
+                    </li>
+                    <li class="main-license_list-item">
+                        <img class="main-license_list-item-img" src="" alt="">
+                        <h3 class="main-license_list-item-h3">
+                            Нормативная база
+                        </h3>
+                    </li>
+                    <li class="main-license_list-item">
+                        <img class="main-license_list-item-img" src="" alt="">
+                        <h3 class="main-license_list-item-h3">
+                            Сертификат соответствия СМК
+                        </h3>
+                    </li>
+                    <li class="main-license_list-item">
+                        <img class="main-license_list-item-img" src="" alt="">
+                        <h3 class="main-license_list-item-h3">
+                            Свидетельство
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="main-about-description_block">
+            <h2 class="main-about-description_h2">
+                прозрачность компании
+            </h2>
+            <p class="main-about-description_block-p">
+                При выборе исполняющей компании необходимо ориентироваться на кейсы, отзывы, благодарности и, самое главное, налоговую
+                 и судебную информацию об организации.  Вы можете проверить надежность компании здесь:
+            </p>
+            <a class="main-about-description_link" href="#">
+                перейти на <span class="main-about-description_link-span">rusprofile</span>
+            </a>          
+            <svg class="main-about-description_block-svg" width="106" height="161" viewBox="0 0 106 161" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M0 5C0 2.23858 2.23858 0 5 0H101C103.761 0 106 2.23858 106 5V161L53 136L0 161V5Z" fill="#338DCE"/>
+                <mask id="mask0_413_206" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="22" y="40" width="64" height="64">
+                <rect x="22" y="40" width="64" height="64" fill="url(#pattern0_413_206)"/>
+                </mask>
+                <g mask="url(#mask0_413_206)">
+                <rect x="19.7674" y="37.7676" width="66.2326" height="66.2326" fill="white"/>
+                </g>
+                <defs>
+                <pattern id="pattern0_413_206" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#image0_413_206" transform="scale(0.0078125)"/>
+                </pattern>
+                <image id="image0_413_206" width="128" height="128" xlink:href="data:image/png;base64,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"/>
+                </defs>
+            </svg>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="section-footer-contact">
+        <ul class="contact-list">
+            <li class="contact-list-item">
+                <a class="contact-list-item_a" href="#">
+                    услуги
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a class="contact-list-item_a" href="#">
+                    контакты
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a class="contact-list-item_a" href="#">
+                    партнеры
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a class="contact-list-item_a" href="#">
+                    о компании
+                </a>
+            </li>
+            <li class="contact-list-item">
+                <a class="contact-list-item_a" href="#">
+                    цены
+                </a>
+            </li>
+        </ul>
+        <div class="footer-logo">
+            <svg width="376" height="69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M335.814.387H376V2.98c0 1.728-.864 2.592-2.593 2.592h-14.259v33.705h-6.482V5.572h-14.26c-1.728 0-2.592-.864-2.592-2.592V.387ZM330.235 34.092c1.728 0 2.592.864 2.592 2.592v2.593h-23.334c-9.074 0-13.611-4.537-13.611-13.612V13.998c0-9.074 4.537-13.611 13.611-13.611h22.686V2.98c0 1.728-.864 2.592-2.593 2.592H310.79c-5.618 0-8.427 2.809-8.427 8.426v11.667c0 5.618 2.809 8.427 8.427 8.427h19.445ZM287.363 34.092c1.728 0 2.593.864 2.593 2.592v2.593H253.01V.387h36.297V2.98c0 1.728-.864 2.592-2.592 2.592h-27.223V17.24h27.871v5.186h-27.871v11.667h27.871ZM207.953.387h40.186V2.98c0 1.728-.864 2.592-2.592 2.592h-14.26v33.705h-6.481V5.572h-14.26c-1.729 0-2.593-.864-2.593-2.592V.387ZM190.007.387c9.074 0 13.611 4.537 13.611 13.611v11.667c0 9.075-4.537 13.612-13.611 13.612h-12.963c-9.075 0-13.612-4.537-13.612-13.612V13.998c0-9.074 4.537-13.611 13.612-13.611h12.963Zm7.13 25.278V13.998c0-5.617-2.809-8.426-8.426-8.426H178.34c-5.617 0-8.426 2.809-8.426 8.426v11.667c0 5.618 2.809 8.427 8.426 8.427h10.371c5.617 0 8.426-2.81 8.426-8.427ZM154.914 34.092c1.728 0 2.592.864 2.592 2.592v2.593h-36.945V.387h36.297V2.98c0 1.728-.864 2.592-2.593 2.592h-27.223V17.24h27.872v5.186h-27.872v11.667h27.872ZM80.684.387h35.001v2.592c0 1.729-.865 2.593-2.593 2.593H87.165v31.112c0 1.729-.864 2.593-2.592 2.593h-3.89V.387ZM254.407 52.753h13.994v1.037c0 .691-.346 1.037-1.037 1.037h-10.365v12.438c0 .691-.346 1.037-1.037 1.037h-1.555V52.753ZM249.821 52.753h1.555v15.549h-1.555c-.691 0-1.037-.346-1.037-1.037v-5.7h-10.365v5.7c0 .691-.346 1.037-1.037 1.037h-1.555V52.753h1.555c.691 0 1.037.346 1.037 1.037v5.701h10.365V53.79c0-.691.346-1.037 1.037-1.037ZM230.206 52.753h2.591v15.549h-1.555c-.691 0-1.036-.346-1.036-1.037V55.971l-10.366 12.33h-2.591V52.754h1.555c.691 0 1.036.346 1.036 1.037v11.294l10.366-12.33ZM210.58 52.753c2.937 0 4.406 1.469 4.406 4.406 0 2.937-1.469 4.405-4.406 4.405h-8.033v5.701c0 .691-.346 1.037-1.037 1.037h-1.554V52.753h10.624Zm-.518 6.738c1.555 0 2.332-.777 2.332-2.332 0-1.555-.777-2.332-2.332-2.332h-7.515v4.664h7.515ZM194.334 52.753h2.591v15.549h-1.555c-.691 0-1.036-.346-1.036-1.037V55.971l-10.366 12.33h-2.591V52.754h1.554c.692 0 1.037.346 1.037 1.037v11.294l10.366-12.33ZM176.791 52.753h1.554v15.549h-1.554c-.692 0-1.037-.346-1.037-1.037v-5.7h-10.366v5.7c0 .691-.345 1.037-1.036 1.037h-1.555V52.753h1.555c.691 0 1.036.346 1.036 1.037v5.701h10.366V53.79c0-.691.345-1.037 1.037-1.037ZM157.174 52.753h2.592v15.549h-1.555c-.691 0-1.037-.346-1.037-1.037V55.971l-10.365 12.33h-2.592V52.754h1.555c.691 0 1.037.346 1.037 1.037v11.294l10.365-12.33ZM141.957 52.753l-6.522 7.775 6.522 7.774h-2.009c-.691 0-1.317-.346-1.9-1.037l-4.772-5.7h-2.462v6.737h-1.555c-.691 0-1.037-.346-1.037-1.037v-5.7h-2.461l-4.773 5.7c-.583.691-1.209 1.037-1.9 1.037h-2.009l6.522-7.775-6.522-7.774h2.009c.691 0 1.317.346 1.9 1.037l4.773 5.701h2.461v-6.738h1.555c.691 0 1.037.346 1.037 1.037v5.701h2.462l4.772-5.701c.583-.691 1.209-1.037 1.9-1.037h2.009ZM113.25 52.753h1.555v15.549h-1.555c-.691 0-1.037-.346-1.037-1.037v-5.7h-10.365v5.7c0 .691-.346 1.037-1.037 1.037h-1.555V52.753h1.555c.691 0 1.037.346 1.037 1.037v5.701h10.365V53.79c0-.691.346-1.037 1.037-1.037ZM93.634 52.753h2.591v15.549h-1.554c-.691 0-1.037-.346-1.037-1.037V55.971L83.269 68.3h-2.592V52.754h1.555c.69 0 1.037.346 1.037 1.037v11.294l10.365-12.33Z" fill="#fff"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0h68.806v68.806H0V0Zm8.846 4.915h55.045v58.976H34.403V21.625h25.556V8.847H8.846v12.778h20.642v5.406H10.813V59.96h23.59v3.932H4.915V4.915h3.931ZM59.96 27.523H40.301v11.795h14.252v5.898H40.301v12.778h19.658V27.523Z" fill="#fff"/>
+            </svg>
+        </div>
+        </section>
+        <div class="stage">
+        <div class="box bounce-1"></div>
+        </div>
+        <script type="module" src="./script.js"></script>
+    </footer>
+</body>
+</html>

@@ -1791,3 +1791,30 @@ h1 .type6{
   box-sizing: border-box;
   border-radius: 15px;
 }
+.main-license_section--width{
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 150px;
+  background-color: #f0f5ff;
+  border-radius: 15px;
+}
+.main-license_div{
+  padding: 0 8% 30px;
+}
+.main-license_list-item-h2{
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.main-license_list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.main-license_list-item:nth-child(1){
+  background-color: #f0f5ff;
+  
+}
+.main-license_list-item{
+  background-color: #fff;
+  border-radius: 15px;
+}
