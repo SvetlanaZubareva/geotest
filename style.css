@@ -611,7 +611,7 @@
     margin-bottom: 60px;
   }
   .section-price_list{
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
   }
   .section-price_list{
@@ -625,11 +625,14 @@
     height: 88px;
     padding: 15px 60px 15px;
     box-sizing: border-box;
+    display: flex;
   }
   .section-price_ul{
     align-items: center;
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+    justify-content: space-between;
   }
 /* Пишем стили для анимации текста */
 .c1{
@@ -1000,7 +1003,7 @@ h1 .type6{
   color: #03233A;
   text-align: center;
   padding: 15px 0 30px;
-  height: 132px;
+  height: 50px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   padding: 0;
@@ -1019,6 +1022,8 @@ h1 .type6{
   font-size: 24px;
   line-height: 29px;
   color: rgba(0, 0, 1);
+  display: flex;
+  justify-content: start;
 }
 .section-price_li--color{
   font-family: "Inter", sans-serif;
@@ -1026,6 +1031,8 @@ h1 .type6{
   font-size: 24px;
   line-height: 29px;
   color: rgba(51,141, 206, 1);
+  display: flex;
+  justify-content: end;
 }
 .swiper-slide_div--width{
   width: 100%;
@@ -1064,9 +1071,9 @@ h1 .type6{
   width: 75%;
   position: relative;
 }
-.swiper-slide_div{
+/* .swiper-slide_div{
   height: 198px;
-}
+} */
 .swiper-slide_div1{
   height: 100%;
 }
@@ -2067,4 +2074,9 @@ h1 .type6{
   background-color: #fff;
   border-radius: 20px;
   color: #03233A;
+}
+.section-price--flex-compony{
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
