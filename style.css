@@ -178,6 +178,10 @@
     justify-content: center;
     align-items: center;
   }
+  .section-services_link-option:hover{
+    background-color: #fff;
+    border: none;
+  }
   .h3-services{
     font-weight: 500;
     font-size: 26px;
@@ -249,6 +253,7 @@
   }
   .section-offer_button:hover{
     background-color: #fff;
+    border: none;
   }
   .section-footer_h2{
     font-weight: 400;
@@ -420,13 +425,13 @@
     width: 619px;
   }
   .advantages-list-item:nth-child(1){
-    margin-right: 14%;
+    margin-right: 10%;
     display: flex;
     align-items: center;
   }
   .advantages-list-item:nth-child(2){
     background-color: #fff;
-    width: 660px;
+    width: 45%;
     height: 305px;
     border-radius: 15px;
     box-sizing: border-box;
@@ -434,32 +439,44 @@
     padding-right: 15px;
     margin-bottom: 15px;
   }
+  .advantages-list-item:nth-child(2):hover{
+    width: 47%;
+  }
   .advantages-list-item:nth-child(3){
     background-color: #fff;
-    width: 489px;
+    width: 30%;
     height: 290px;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 10px 30px 30px;
     padding-right: 15px;
+  }
+  .advantages-list-item:nth-child(3):hover{
+    width: 33%;
   }
   .advantages-list-item:nth-child(4){
     background-color: #fff;
-    width: 489px;
+    width: 30%;
     height: 290px;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 10px 30px 30px;
     padding-right: 15px;
   }
+  .advantages-list-item:nth-child(4):hover{
+    width: 33%;
+  }
   .advantages-list-item:nth-child(5){
     background-color: #fff;
-    width: 489px;
+    width: 30%;
     height: 290px;
     border-radius: 15px;
     box-sizing: border-box;
     padding: 10px 30px 30px;
     padding-right: 15px;
+  }
+  .advantages-list-item:nth-child(5):hover{
+    width: 33%;
   }
   .advantages-list-item_p{
     width: 345px;
@@ -559,7 +576,7 @@
     text-align: center;
   }
   .section-footer_svg{
-    margin-left: 5px;
+    margin-right: 5px;
   }
   .adress--flex{
     display: flex;
@@ -655,7 +672,8 @@ h2 .type{
   white-space: nowrap; 
   width: 0;
   animation: 
-    typing 1s steps(25, end) forwards;
+  typing 1s steps(25, end) forwards;
+  animation-delay: 0.4s;
 }
 h2 .type2{ 
   overflow: hidden;
@@ -663,7 +681,7 @@ h2 .type2{
   width: 0;
   animation: 
     typing 1s steps(25, end) forwards;
-  animation-delay: 1s;
+  animation-delay: 0.8s;
 }
 h2 .type3{ 
   overflow: hidden;
@@ -671,7 +689,7 @@ h2 .type3{
   width: 0;
   animation: 
     typing 1s steps(25, end) forwards;
-  animation-delay: 2s;
+  animation-delay: 1.2s;
 }
 h2 .type4{ 
   overflow: hidden;
@@ -679,7 +697,7 @@ h2 .type4{
   width: 0;
   animation: 
     typing 1s steps(25, end) forwards;
-  animation-delay: 3s;
+  animation-delay: 1.4s;
 }
 h2 .type5{ 
   overflow: hidden;
@@ -687,7 +705,7 @@ h2 .type5{
   width: 0;
   animation: 
     typing 1s steps(25, end) forwards;
-  animation-delay: 4s;
+  animation-delay: 1.8s;
 }
 h2 .type6{ 
   overflow: hidden;
@@ -695,21 +713,22 @@ h2 .type6{
   width: 0;
   animation: 
     typing 1s steps(25, end) forwards;
-  animation-delay: 5s;
+  animation-delay: 2.2s;
 }
 h1 .type{
     overflow: hidden;
     white-space: nowrap; 
     width: 0;
     animation: 
-      typing 1s steps(25, end) forwards;
+      typing 0.1s steps(25, end) forwards;
+    animation-delay: 0.5s;
 }
 h1 .type2{ 
     overflow: hidden;
     white-space: nowrap; 
     width: 0;
     animation: 
-      typing 1s steps(25, end) forwards;
+      typing 0.1s steps(25, end) forwards;
     animation-delay: 1s;
 }
 h1 .type3{
@@ -717,32 +736,32 @@ h1 .type3{
     white-space: nowrap; 
     width: 0;
     animation: 
-      typing 1s steps(25, end) forwards;
-    animation-delay: 2s;
+      typing 0.1s steps(25, end) forwards;
+    animation-delay: 1.5s;
 }
 h1 .type4{
   overflow: hidden;
   white-space: nowrap; 
   width: 0;
   animation: 
-    typing 1s steps(25, end) forwards;
-  animation-delay: 3s;
+    typing 0.1s steps(25, end) forwards;
+  animation-delay: 2s;
 }
 h1 .type5{ 
   overflow: hidden;
   white-space: nowrap; 
   width: 0;
   animation: 
-    typing 1s steps(25, end) forwards;
-  animation-delay: 4s;
+    typing 0.11s steps(25, end) forwards;
+  animation-delay: 2.5s;
 }
 h1 .type6{
   overflow: hidden;
   white-space: nowrap; 
   width: 0;
   animation: 
-    typing 1s steps(25, end) forwards;
-  animation-delay: 5s;
+    typing 0.11s steps(25, end) forwards;
+  animation-delay: 3s;
 }
 @keyframes typing {
   from { width: 0 }
@@ -874,9 +893,15 @@ h1 .type6{
   object-fit: cover;
   cursor: pointer;
 }
-.swiper-slide2:hover{
-  padding: 5px;
+.swiper-slide-img:hover{
+  width: 210px;
+  height: 185px;
+  position: absolute;
+  border-radius: 15px;
 }
+/* .swiper-slide2:hover{
+  padding: 5px;
+} */
 #swiper1{
   border-radius: 15px;
 } 
