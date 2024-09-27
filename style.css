@@ -1752,8 +1752,8 @@ h1 .type6{
 }
 .section-contact_adress{
   display: grid;
-  grid-template-columns: 30% 65%;
-  gap: 75px;
+  grid-template-columns: 30% 70%;
+  /* gap: 75px; */
   width: 80%;
   margin: 0 auto;
   margin-top: 150px;
@@ -2200,4 +2200,27 @@ h1 .type6{
   display: flex;
   text-align: center;
   margin-bottom: 60px;
+}
+.section-contact_form-input--hight{
+  justify-content: start;
+  display: flex;
+  align-items: start;
+  padding-bottom: 100px;
+  padding-top: 20px;
+}
+.servise-section-price--flex{
+  flex-direction: column;
+}
+.section-price_p--margin--flex{
+  text-align: center;
+}
+.list-company_button svg:hover{
+  stroke: #fff;
+}
+
+.list-company_button:hover{
+  background-color: #338DCE;
+}
+.list-company_button--svg{
+  stroke:#338DCE;
 }
