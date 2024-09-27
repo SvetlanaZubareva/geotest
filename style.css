@@ -899,9 +899,6 @@ h1 .type6{
   position: absolute;
   border-radius: 15px;
 }
-/* .swiper-slide2:hover{
-  padding: 5px;
-} */
 #swiper1{
   border-radius: 15px;
 } 
@@ -969,9 +966,6 @@ h1 .type6{
   border: 2px #338DCE solid;
   background-color: inherit;
 }
-/* .list-company_button:hover{
-  background-color: #338DCE;
-} */
 .list-company_item:nth-child(1){
   display: grid;
   grid-template-columns: 75% 15%;
@@ -1096,9 +1090,6 @@ h1 .type6{
   width: 75%;
   position: relative;
 }
-/* .swiper-slide_div{
-  height: 198px;
-} */
 .swiper-slide_div1{
   height: 100%;
 }
@@ -1113,8 +1104,99 @@ h1 .type6{
   cursor: pointer;
  
 }
+.container_list-item--animation:nth-child(1):hover{
+  /* top: 10px; */
+  cursor: pointer;
+  -webkit-animation: floatBubble 2s infinite;
+  -webkit-animation-direction:alternate;
+}
+@-webkit-keyframes floatBubble{
+  from{
+         top:60px;
+         -webkit-animation-timing-function: ease-in;
+ 
+    }
+ 
+    to {
+       top: 140px;
+       -webkit-animation-timing-function: ease-out;
+    }
+ 
+ }
+ .container_list-item--animation:nth-child(2):hover{
+  cursor: pointer;
+  -webkit-animation: floatBubble1 2s infinite;
+  -webkit-animation-direction:alternate;
+}
+@-webkit-keyframes floatBubble1{
+  from{
+         top:250px;
+         -webkit-animation-timing-function: ease-in;
+ 
+    }
+ 
+    to {
+       top: 190px;
+       -webkit-animation-timing-function: ease-out;
+    }
+ 
+ }
+ .container_list-item--animation:nth-child(3):hover{
+  cursor: pointer;
+  -webkit-animation: floatBubble2 2s infinite;
+  -webkit-animation-direction:alternate;
+}
+@-webkit-keyframes floatBubble2{
+  from{
+         top:350px;
+         -webkit-animation-timing-function: ease-in;
+ 
+    }
+ 
+    to {
+       top: 250px;
+       -webkit-animation-timing-function: ease-out;
+    }
+ 
+ }
+ .container_list-item--animation:nth-child(4):hover{
+  cursor: pointer;
+  -webkit-animation: floatBubble3 2s infinite;
+  -webkit-animation-direction:alternate;
+}
+@-webkit-keyframes floatBubble3{
+  from{
+         top:250px;
+         -webkit-animation-timing-function: ease-in;
+ 
+    }
+ 
+    to {
+       top: 330px;
+       -webkit-animation-timing-function: ease-out;
+    }
+ 
+ }
+ .container_list-item--animation:nth-child(5):hover{
+  cursor: pointer;
+  -webkit-animation: floatBubble4 2s infinite;
+  -webkit-animation-direction:alternate;
+}
+@-webkit-keyframes floatBubble4{
+  from{
+         top:200px;
+         -webkit-animation-timing-function: ease-in;
+ 
+    }
+ 
+    to {
+       top: 250px;
+       -webkit-animation-timing-function: ease-out;
+    }
+ 
+ }
 .container_list-item--animation1:hover{
-  top: 10px;
+  top: 5px;
   cursor: pointer;
  
 }
@@ -2104,4 +2186,18 @@ h1 .type6{
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+.main-atestat_h2{
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 41px 0 45px;
+}
+.main-atestat_p{
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  margin-bottom: 60px;
 }
